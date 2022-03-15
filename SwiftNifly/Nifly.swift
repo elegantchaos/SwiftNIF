@@ -8,5 +8,5 @@
 import Foundation
 
 public func swiftTest() {
-    niflyTest()
+    let fn = NifFile()
 }

@@ -7,11 +7,10 @@
 
 #import <Foundation/Foundation.h>
 
-extern void niflyTest();
-
 @interface NifFile: NSObject {
 }
 
-- (void)test;
+- (BOOL)load: (NSURL*) url error: (NSError**) error;
+- (BOOL)save: (NSURL*) url error: (NSError**) error;
 
 @end

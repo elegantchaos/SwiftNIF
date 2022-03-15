@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8BA1F88627E0C157004720E7 /* Nifly.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BA1F88427E0C157004720E7 /* Nifly.h */; };
+		8BA1F88627E0C157004720E7 /* NifFileWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BA1F88427E0C157004720E7 /* NifFileWrapper.h */; };
 		8BA1F88927E0C274004720E7 /* NiflyBridge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1F88827E0C274004720E7 /* NiflyBridge.cpp */; };
 		8BA1F88C27E0C301004720E7 /* Nifly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1F88B27E0C301004720E7 /* Nifly.swift */; };
 		8BA1F89427E0C38D004720E7 /* NiflyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1F89327E0C38D004720E7 /* NiflyTests.swift */; };
@@ -44,6 +44,39 @@
 		8BA1F93827E0CE4A004720E7 /* Object3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1F91727E0CE4A004720E7 /* Object3d.cpp */; };
 		8BA1F93927E0CE4A004720E7 /* Particles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1F91827E0CE4A004720E7 /* Particles.cpp */; };
 		8BA1F93A27E0CE4A004720E7 /* Factory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1F91927E0CE4A004720E7 /* Factory.cpp */; };
+		8BA1F93B27E0D4B9004720E7 /* TestNifFile_Optimize_Dynamic_LE_to_SE.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8F827E0CE4A004720E7 /* TestNifFile_Optimize_Dynamic_LE_to_SE.nif */; };
+		8BA1F93C27E0D4B9004720E7 /* TestNifFile_Optimize_SE_to_LE.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8F927E0CE4A004720E7 /* TestNifFile_Optimize_SE_to_LE.nif */; };
+		8BA1F93D27E0D4B9004720E7 /* TestNifFile_Optimize_LE_to_SE_expected.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8EE27E0CE4A004720E7 /* TestNifFile_Optimize_LE_to_SE_expected.nif */; };
+		8BA1F93E27E0D4B9004720E7 /* TestNifFile_Furniture_Col_SE_expected.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8EF27E0CE4A004720E7 /* TestNifFile_Furniture_Col_SE_expected.nif */; };
+		8BA1F93F27E0D4B9004720E7 /* TestNifFile_Optimize_SE_to_LE_expected.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8ED27E0CE4A004720E7 /* TestNifFile_Optimize_SE_to_LE_expected.nif */; };
+		8BA1F94027E0D4B9004720E7 /* TestNifFile_Static_SE.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8F627E0CE4A004720E7 /* TestNifFile_Static_SE.nif */; };
+		8BA1F94127E0D4B9004720E7 /* TestNifFile_Animated_LE_expected.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8DF27E0CE4A004720E7 /* TestNifFile_Animated_LE_expected.nif */; };
+		8BA1F94227E0D4B9004720E7 /* TestNifFile_Skinned_SE.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8FB27E0CE4A004720E7 /* TestNifFile_Skinned_SE.nif */; };
+		8BA1F94327E0D4B9004720E7 /* TestNifFile_Static_FO4.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8FE27E0CE4A004720E7 /* TestNifFile_Static_FO4.nif */; };
+		8BA1F94427E0D4B9004720E7 /* TestNifFile_Skinned_FO4_expected.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8F227E0CE4A004720E7 /* TestNifFile_Skinned_FO4_expected.nif */; };
+		8BA1F94527E0D4B9004720E7 /* TestNifFile_Skinned_OB.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8EA27E0CE4A004720E7 /* TestNifFile_Skinned_OB.nif */; };
+		8BA1F94627E0D4B9004720E7 /* TestNifFile_OrderedNode_SE_expected.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F90027E0CE4A004720E7 /* TestNifFile_OrderedNode_SE_expected.nif */; };
+		8BA1F94727E0D4B9004720E7 /* TestNifFile_Optimize_Dynamic_SE_to_LE.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8E427E0CE4A004720E7 /* TestNifFile_Optimize_Dynamic_SE_to_LE.nif */; };
+		8BA1F94827E0D4B9004720E7 /* TestNifFile_Animated_LE.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8F427E0CE4A004720E7 /* TestNifFile_Animated_LE.nif */; };
+		8BA1F94927E0D4B9004720E7 /* TestNifFile_Static_FO4_expected.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8E727E0CE4A004720E7 /* TestNifFile_Static_FO4_expected.nif */; };
+		8BA1F94A27E0D4B9004720E7 /* TestNifFile_Skinned_Dynamic_SE.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8E827E0CE4A004720E7 /* TestNifFile_Skinned_Dynamic_SE.nif */; };
+		8BA1F94B27E0D4B9004720E7 /* TestNifFile_MultiBound_SE.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8F127E0CE4A004720E7 /* TestNifFile_MultiBound_SE.nif */; };
+		8BA1F94C27E0D4B9004720E7 /* TestNifFile_Skinned_Dynamic_SE_expected.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8F027E0CE4A004720E7 /* TestNifFile_Skinned_Dynamic_SE_expected.nif */; };
+		8BA1F94D27E0D4B9004720E7 /* TestNifFile_Static_SE_expected.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8E227E0CE4A004720E7 /* TestNifFile_Static_SE_expected.nif */; };
+		8BA1F94E27E0D4B9004720E7 /* TestNifFile_Skinned_FO4.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8FF27E0CE4A004720E7 /* TestNifFile_Skinned_FO4.nif */; };
+		8BA1F94F27E0D4B9004720E7 /* TestNifFile_DeepGraph_SE.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8FA27E0CE4A004720E7 /* TestNifFile_DeepGraph_SE.nif */; };
+		8BA1F95027E0D4B9004720E7 /* TestNifFile_Furniture_Col_SE.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8E127E0CE4A004720E7 /* TestNifFile_Furniture_Col_SE.nif */; };
+		8BA1F95127E0D4B9004720E7 /* TestNifFile_Optimize_Dynamic_LE_to_SE_expected.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8E927E0CE4A004720E7 /* TestNifFile_Optimize_Dynamic_LE_to_SE_expected.nif */; };
+		8BA1F95227E0D4B9004720E7 /* TestNifFile_MultiBound_SE_expected.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8F727E0CE4A004720E7 /* TestNifFile_MultiBound_SE_expected.nif */; };
+		8BA1F95327E0D4B9004720E7 /* TestNifFile_LooseBlocks_SE_expected.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8FC27E0CE4A004720E7 /* TestNifFile_LooseBlocks_SE_expected.nif */; };
+		8BA1F95427E0D4B9004720E7 /* TestNifFile_LooseBlocks_SE.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8FD27E0CE4A004720E7 /* TestNifFile_LooseBlocks_SE.nif */; };
+		8BA1F95527E0D4B9004720E7 /* TestNifFile_OrderedNode_SE.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8F527E0CE4A004720E7 /* TestNifFile_OrderedNode_SE.nif */; };
+		8BA1F95627E0D4B9004720E7 /* TestNifFile_Optimize_Dynamic_SE_to_LE_expected.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8EB27E0CE4A004720E7 /* TestNifFile_Optimize_Dynamic_SE_to_LE_expected.nif */; };
+		8BA1F95727E0D4B9004720E7 /* TestNifFile_DeepGraph_SE_expected.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8E527E0CE4A004720E7 /* TestNifFile_DeepGraph_SE_expected.nif */; };
+		8BA1F95827E0D4B9004720E7 /* TestNifFile_Optimize_LE_to_SE.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8E627E0CE4A004720E7 /* TestNifFile_Optimize_LE_to_SE.nif */; };
+		8BA1F95927E0D4B9004720E7 /* TestNifFile_Skinned_OB_expected.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8EC27E0CE4A004720E7 /* TestNifFile_Skinned_OB_expected.nif */; };
+		8BA1F95A27E0D4B9004720E7 /* TestNifFile_Skinned_SE_expected.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8E027E0CE4A004720E7 /* TestNifFile_Skinned_SE_expected.nif */; };
+		8BA1F95D27E0D508004720E7 /* XCTestExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 8BA1F95C27E0D508004720E7 /* XCTestExtensions */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,10 +91,10 @@
 
 /* Begin PBXFileReference section */
 		8BA1F7E727E0BC28004720E7 /* libNifly.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNifly.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		8BA1F88427E0C157004720E7 /* Nifly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nifly.h; sourceTree = "<group>"; };
+		8BA1F88427E0C157004720E7 /* NifFileWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NifFileWrapper.h; sourceTree = "<group>"; };
 		8BA1F88527E0C157004720E7 /* NifFile.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NifFile.mm; sourceTree = "<group>"; };
 		8BA1F88827E0C274004720E7 /* NiflyBridge.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NiflyBridge.cpp; sourceTree = "<group>"; };
-		8BA1F88A27E0C300004720E7 /* Nifly-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nifly-Bridging-Header.h"; sourceTree = "<group>"; };
+		8BA1F88A27E0C300004720E7 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		8BA1F88B27E0C301004720E7 /* Nifly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nifly.swift; sourceTree = "<group>"; };
 		8BA1F89127E0C38D004720E7 /* NiflyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NiflyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BA1F89327E0C38D004720E7 /* NiflyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiflyTests.swift; sourceTree = "<group>"; };
@@ -151,6 +184,7 @@
 			files = (
 				8BA1F89E27E0C99C004720E7 /* libc++.tbd in Frameworks */,
 				8BA1F89527E0C38D004720E7 /* libNifly.a in Frameworks */,
+				8BA1F95D27E0D508004720E7 /* XCTestExtensions in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,11 +214,11 @@
 		8BA1F7E927E0BC28004720E7 /* SwiftNifly */ = {
 			isa = PBXGroup;
 			children = (
-				8BA1F88427E0C157004720E7 /* Nifly.h */,
+				8BA1F88427E0C157004720E7 /* NifFileWrapper.h */,
 				8BA1F88827E0C274004720E7 /* NiflyBridge.cpp */,
 				8BA1F88B27E0C301004720E7 /* Nifly.swift */,
 				8BA1F88527E0C157004720E7 /* NifFile.mm */,
-				8BA1F88A27E0C300004720E7 /* Nifly-Bridging-Header.h */,
+				8BA1F88A27E0C300004720E7 /* BridgingHeader.h */,
 			);
 			path = SwiftNifly;
 			sourceTree = "<group>";
@@ -351,7 +385,7 @@
 				8BA1F92627E0CE4A004720E7 /* VertexData.hpp in Headers */,
 				8BA1F91A27E0CE4A004720E7 /* Object3d.hpp in Headers */,
 				8BA1F92827E0CE4A004720E7 /* Nodes.hpp in Headers */,
-				8BA1F88627E0C157004720E7 /* Nifly.h in Headers */,
+				8BA1F88627E0C157004720E7 /* NifFileWrapper.h in Headers */,
 				8BA1F91D27E0CE4A004720E7 /* Keys.hpp in Headers */,
 				8BA1F92427E0CE4A004720E7 /* Shaders.hpp in Headers */,
 			);
@@ -391,6 +425,9 @@
 				8BA1F89727E0C38D004720E7 /* PBXTargetDependency */,
 			);
 			name = NiflyTests;
+			packageProductDependencies = (
+				8BA1F95C27E0D508004720E7 /* XCTestExtensions */,
+			);
 			productName = NiflyTests;
 			productReference = 8BA1F89127E0C38D004720E7 /* NiflyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -423,6 +460,9 @@
 				Base,
 			);
 			mainGroup = 8BA1F7DE27E0BC27004720E7;
+			packageReferences = (
+				8BA1F95B27E0D508004720E7 /* XCRemoteSwiftPackageReference "XCTestExtensions" */,
+			);
 			productRefGroup = 8BA1F7E827E0BC28004720E7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -438,6 +478,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BA1F95427E0D4B9004720E7 /* TestNifFile_LooseBlocks_SE.nif in Resources */,
+				8BA1F95227E0D4B9004720E7 /* TestNifFile_MultiBound_SE_expected.nif in Resources */,
+				8BA1F94A27E0D4B9004720E7 /* TestNifFile_Skinned_Dynamic_SE.nif in Resources */,
+				8BA1F94127E0D4B9004720E7 /* TestNifFile_Animated_LE_expected.nif in Resources */,
+				8BA1F94727E0D4B9004720E7 /* TestNifFile_Optimize_Dynamic_SE_to_LE.nif in Resources */,
+				8BA1F95127E0D4B9004720E7 /* TestNifFile_Optimize_Dynamic_LE_to_SE_expected.nif in Resources */,
+				8BA1F93D27E0D4B9004720E7 /* TestNifFile_Optimize_LE_to_SE_expected.nif in Resources */,
+				8BA1F94827E0D4B9004720E7 /* TestNifFile_Animated_LE.nif in Resources */,
+				8BA1F94D27E0D4B9004720E7 /* TestNifFile_Static_SE_expected.nif in Resources */,
+				8BA1F94427E0D4B9004720E7 /* TestNifFile_Skinned_FO4_expected.nif in Resources */,
+				8BA1F94C27E0D4B9004720E7 /* TestNifFile_Skinned_Dynamic_SE_expected.nif in Resources */,
+				8BA1F94027E0D4B9004720E7 /* TestNifFile_Static_SE.nif in Resources */,
+				8BA1F95827E0D4B9004720E7 /* TestNifFile_Optimize_LE_to_SE.nif in Resources */,
+				8BA1F94B27E0D4B9004720E7 /* TestNifFile_MultiBound_SE.nif in Resources */,
+				8BA1F95A27E0D4B9004720E7 /* TestNifFile_Skinned_SE_expected.nif in Resources */,
+				8BA1F94927E0D4B9004720E7 /* TestNifFile_Static_FO4_expected.nif in Resources */,
+				8BA1F93F27E0D4B9004720E7 /* TestNifFile_Optimize_SE_to_LE_expected.nif in Resources */,
+				8BA1F94527E0D4B9004720E7 /* TestNifFile_Skinned_OB.nif in Resources */,
+				8BA1F95727E0D4B9004720E7 /* TestNifFile_DeepGraph_SE_expected.nif in Resources */,
+				8BA1F94227E0D4B9004720E7 /* TestNifFile_Skinned_SE.nif in Resources */,
+				8BA1F95927E0D4B9004720E7 /* TestNifFile_Skinned_OB_expected.nif in Resources */,
+				8BA1F94327E0D4B9004720E7 /* TestNifFile_Static_FO4.nif in Resources */,
+				8BA1F93E27E0D4B9004720E7 /* TestNifFile_Furniture_Col_SE_expected.nif in Resources */,
+				8BA1F95027E0D4B9004720E7 /* TestNifFile_Furniture_Col_SE.nif in Resources */,
+				8BA1F95627E0D4B9004720E7 /* TestNifFile_Optimize_Dynamic_SE_to_LE_expected.nif in Resources */,
+				8BA1F94F27E0D4B9004720E7 /* TestNifFile_DeepGraph_SE.nif in Resources */,
+				8BA1F94627E0D4B9004720E7 /* TestNifFile_OrderedNode_SE_expected.nif in Resources */,
+				8BA1F95327E0D4B9004720E7 /* TestNifFile_LooseBlocks_SE_expected.nif in Resources */,
+				8BA1F93C27E0D4B9004720E7 /* TestNifFile_Optimize_SE_to_LE.nif in Resources */,
+				8BA1F94E27E0D4B9004720E7 /* TestNifFile_Skinned_FO4.nif in Resources */,
+				8BA1F93B27E0D4B9004720E7 /* TestNifFile_Optimize_Dynamic_LE_to_SE.nif in Resources */,
+				8BA1F95527E0D4B9004720E7 /* TestNifFile_OrderedNode_SE.nif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,7 +683,7 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "SwiftNifly/Nifly-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = SwiftNifly/BridgingHeader.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				SYSTEM_HEADER_SEARCH_PATHS = (
@@ -637,7 +709,7 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "SwiftNifly/Nifly-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = SwiftNifly/BridgingHeader.h;
 				SWIFT_VERSION = 5.0;
 				SYSTEM_HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -711,6 +783,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8BA1F95B27E0D508004720E7 /* XCRemoteSwiftPackageReference "XCTestExtensions" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/elegantchaos/XCTestExtensions";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8BA1F95C27E0D508004720E7 /* XCTestExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8BA1F95B27E0D508004720E7 /* XCRemoteSwiftPackageReference "XCTestExtensions" */;
+			productName = XCTestExtensions;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8BA1F7DF27E0BC27004720E7 /* Project object */;
 }

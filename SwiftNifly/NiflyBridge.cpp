@@ -8,14 +8,10 @@
 #include <stdio.h>
 #import "NifFile.hpp"
 
-extern "C" {
-    void niflyTest();
-
-    void niflyTest() {
-        nifly::NifFile nf;
-        
-        printf("blah");
-    }
+void niflyTest() {
+    nifly::NifFile nf;
+    
+    printf("blah");
 }
 
 
