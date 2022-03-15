@@ -4,7 +4,7 @@
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
 import Foundation
-import ObjCNifly
+import cnifly
 
 public class NifFile {
     enum Error: Swift.Error {

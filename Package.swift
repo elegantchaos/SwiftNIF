@@ -31,7 +31,7 @@ let package = Package(
         .target(
             name: "SwiftNifly",
             dependencies: [
-                "ObjCNifly"
+                "cnifly"
             ],
             cSettings: [
                 .unsafeFlags(["-fmodules"])
@@ -42,7 +42,7 @@ let package = Package(
         ),
         
             .target(
-                name: "ObjCNifly",
+                name: "cnifly",
                 dependencies: [
                     "nifly"
                 ],
@@ -56,9 +56,6 @@ let package = Package(
         
             .target(
                 name: "nifly",
-//                sources: [
-//                    "Dependencies/nifly/src/"
-//                ],
                 cxxSettings: [
                     .unsafeFlags(["-std=c++17"])
                 ]
