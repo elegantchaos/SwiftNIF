@@ -1,0 +1,5 @@
+framework module ObjCNifly {
+    umbrella header "ObjCNifly.h"
+    export *
+    module * { export * }
+}
