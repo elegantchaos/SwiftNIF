@@ -3,5 +3,6 @@
 //  All code (c) 2022 - present day, Elegant Chaos Limited.
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-#include "nifly_file.h"
-#include "ni_node.h"
+extern "C" {
+    #include "ni_node.h"
+}

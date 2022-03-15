@@ -3,5 +3,14 @@
 //  All code (c) 2022 - present day, Elegant Chaos Limited.
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-#include "nifly_file.h"
-#include "ni_node.h"
+import Foundation
+import cnifly
+
+public class NiNode {
+    let node: ni_node
+    
+    public init?(_ node: ni_node?) {
+        guard let node = node else { return nil }
+        self.node = node
+    }
+}

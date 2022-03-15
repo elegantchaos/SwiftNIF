@@ -3,5 +3,10 @@
 //  All code (c) 2022 - present day, Elegant Chaos Limited.
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-#include "nifly_file.h"
-#include "ni_node.h"
+
+typedef void* ni_node;
+
+//nifly_file nifly_file_new();
+//void nifly_file_dispose(nifly_file);
+//int nifly_file_load(nifly_file file, const char* path);
+//int nifly_file_save(nifly_file file, const char* path);

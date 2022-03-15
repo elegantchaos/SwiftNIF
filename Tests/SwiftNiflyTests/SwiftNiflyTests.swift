@@ -26,6 +26,13 @@ class NiflyTests: XCTestCase {
         XCTAssertNoThrow(try file.save(to: output))
     }
 
+    func testNodes() throws {
+        let url = Bundle.module.url(forResource: "TestNifFile_Static_SE", withExtension: "nif")!
+        let file = NifFile()
+        try file.load(from: url)
+        let root = file.root
+        XCTAssertNotNil(root)
+    }
     /*
      
      

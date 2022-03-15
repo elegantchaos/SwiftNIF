@@ -4,7 +4,8 @@
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
 extern "C" {
-    #include "nifly_file.hpp"
+#include "nifly_file.h"
+#include "ni_node.h"
 }
 
 #include "NifFile.hpp"
@@ -34,6 +35,10 @@ int nifly_file_load(nifly_file file, const char* path) {
 
 int nifly_file_save(nifly_file file, const char* path) {
     return asFile(file)->Save(path);
+}
+
+ni_node nifly_file_get_root_node(nifly_file file) {
+    return asFile(file)->GetRootNode();
 }
 
 }

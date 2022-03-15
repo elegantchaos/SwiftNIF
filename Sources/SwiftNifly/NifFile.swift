@@ -35,5 +35,10 @@ public class NifFile {
             throw Error.loadFailed(Int(result))
         }
     }
+    
+    public var root: NiNode? {
+        let root = nifly_file_get_root_node(file)
+        return NiNode(root)
+    }
 }
 
