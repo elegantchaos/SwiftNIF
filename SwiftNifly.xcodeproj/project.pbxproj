@@ -1,0 +1,716 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8BA1F88627E0C157004720E7 /* Nifly.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BA1F88427E0C157004720E7 /* Nifly.h */; };
+		8BA1F88927E0C274004720E7 /* NiflyBridge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1F88827E0C274004720E7 /* NiflyBridge.cpp */; };
+		8BA1F88C27E0C301004720E7 /* Nifly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1F88B27E0C301004720E7 /* Nifly.swift */; };
+		8BA1F89427E0C38D004720E7 /* NiflyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1F89327E0C38D004720E7 /* NiflyTests.swift */; };
+		8BA1F89527E0C38D004720E7 /* libNifly.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA1F7E727E0BC28004720E7 /* libNifly.a */; };
+		8BA1F89B27E0C665004720E7 /* NifFile.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1F88527E0C157004720E7 /* NifFile.mm */; };
+		8BA1F89E27E0C99C004720E7 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA1F89D27E0C99C004720E7 /* libc++.tbd */; };
+		8BA1F91A27E0CE4A004720E7 /* Object3d.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8BA1F8CC27E0CE4A004720E7 /* Object3d.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BA1F91B27E0CE4A004720E7 /* Particles.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8BA1F8CD27E0CE4A004720E7 /* Particles.hpp */; };
+		8BA1F91C27E0CE4A004720E7 /* Factory.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8BA1F8CE27E0CE4A004720E7 /* Factory.hpp */; };
+		8BA1F91D27E0CE4A004720E7 /* Keys.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8BA1F8CF27E0CE4A004720E7 /* Keys.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BA1F91E27E0CE4A004720E7 /* Animation.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8BA1F8D027E0CE4A004720E7 /* Animation.hpp */; };
+		8BA1F91F27E0CE4A004720E7 /* BasicTypes.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8BA1F8D127E0CE4A004720E7 /* BasicTypes.hpp */; };
+		8BA1F92027E0CE4A004720E7 /* NifFile.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8BA1F8D227E0CE4A004720E7 /* NifFile.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BA1F92127E0CE4A004720E7 /* Objects.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8BA1F8D327E0CE4A004720E7 /* Objects.hpp */; };
+		8BA1F92227E0CE4A004720E7 /* Skin.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8BA1F8D427E0CE4A004720E7 /* Skin.hpp */; };
+		8BA1F92327E0CE4A004720E7 /* bhk.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8BA1F8D527E0CE4A004720E7 /* bhk.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BA1F92427E0CE4A004720E7 /* Shaders.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8BA1F8D627E0CE4A004720E7 /* Shaders.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BA1F92527E0CE4A004720E7 /* ExtraData.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8BA1F8D727E0CE4A004720E7 /* ExtraData.hpp */; };
+		8BA1F92627E0CE4A004720E7 /* VertexData.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8BA1F8D827E0CE4A004720E7 /* VertexData.hpp */; };
+		8BA1F92727E0CE4A004720E7 /* Geometry.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8BA1F8D927E0CE4A004720E7 /* Geometry.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BA1F92827E0CE4A004720E7 /* Nodes.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8BA1F8DA27E0CE4A004720E7 /* Nodes.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BA1F92927E0CE4A004720E7 /* NifUtil.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8BA1F8DB27E0CE4A004720E7 /* NifUtil.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BA1F92A27E0CE4A004720E7 /* KDMatcher.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8BA1F8DC27E0CE4A004720E7 /* KDMatcher.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BA1F92E27E0CE4A004720E7 /* Geometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1F90C27E0CE4A004720E7 /* Geometry.cpp */; };
+		8BA1F92F27E0CE4A004720E7 /* Nodes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1F90E27E0CE4A004720E7 /* Nodes.cpp */; };
+		8BA1F93027E0CE4A004720E7 /* Objects.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1F90F27E0CE4A004720E7 /* Objects.cpp */; };
+		8BA1F93127E0CE4A004720E7 /* Skin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1F91027E0CE4A004720E7 /* Skin.cpp */; };
+		8BA1F93227E0CE4A004720E7 /* bhk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1F91127E0CE4A004720E7 /* bhk.cpp */; };
+		8BA1F93327E0CE4A004720E7 /* Shaders.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1F91227E0CE4A004720E7 /* Shaders.cpp */; };
+		8BA1F93427E0CE4A004720E7 /* ExtraData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1F91327E0CE4A004720E7 /* ExtraData.cpp */; };
+		8BA1F93527E0CE4A004720E7 /* BasicTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1F91427E0CE4A004720E7 /* BasicTypes.cpp */; };
+		8BA1F93627E0CE4A004720E7 /* Animation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1F91527E0CE4A004720E7 /* Animation.cpp */; };
+		8BA1F93727E0CE4A004720E7 /* NifFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1F91627E0CE4A004720E7 /* NifFile.cpp */; };
+		8BA1F93827E0CE4A004720E7 /* Object3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1F91727E0CE4A004720E7 /* Object3d.cpp */; };
+		8BA1F93927E0CE4A004720E7 /* Particles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1F91827E0CE4A004720E7 /* Particles.cpp */; };
+		8BA1F93A27E0CE4A004720E7 /* Factory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1F91927E0CE4A004720E7 /* Factory.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8BA1F89627E0C38D004720E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BA1F7DF27E0BC27004720E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BA1F7E627E0BC28004720E7;
+			remoteInfo = Nifly;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8BA1F7E727E0BC28004720E7 /* libNifly.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNifly.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BA1F88427E0C157004720E7 /* Nifly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nifly.h; sourceTree = "<group>"; };
+		8BA1F88527E0C157004720E7 /* NifFile.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NifFile.mm; sourceTree = "<group>"; };
+		8BA1F88827E0C274004720E7 /* NiflyBridge.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NiflyBridge.cpp; sourceTree = "<group>"; };
+		8BA1F88A27E0C300004720E7 /* Nifly-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nifly-Bridging-Header.h"; sourceTree = "<group>"; };
+		8BA1F88B27E0C301004720E7 /* Nifly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nifly.swift; sourceTree = "<group>"; };
+		8BA1F89127E0C38D004720E7 /* NiflyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NiflyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BA1F89327E0C38D004720E7 /* NiflyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiflyTests.swift; sourceTree = "<group>"; };
+		8BA1F89D27E0C99C004720E7 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		8BA1F8C827E0CE4A004720E7 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		8BA1F8CA27E0CE4A004720E7 /* nifly-config.cmake.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "nifly-config.cmake.in"; sourceTree = "<group>"; };
+		8BA1F8CC27E0CE4A004720E7 /* Object3d.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Object3d.hpp; sourceTree = "<group>"; };
+		8BA1F8CD27E0CE4A004720E7 /* Particles.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Particles.hpp; sourceTree = "<group>"; };
+		8BA1F8CE27E0CE4A004720E7 /* Factory.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Factory.hpp; sourceTree = "<group>"; };
+		8BA1F8CF27E0CE4A004720E7 /* Keys.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Keys.hpp; sourceTree = "<group>"; };
+		8BA1F8D027E0CE4A004720E7 /* Animation.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Animation.hpp; sourceTree = "<group>"; };
+		8BA1F8D127E0CE4A004720E7 /* BasicTypes.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BasicTypes.hpp; sourceTree = "<group>"; };
+		8BA1F8D227E0CE4A004720E7 /* NifFile.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NifFile.hpp; sourceTree = "<group>"; };
+		8BA1F8D327E0CE4A004720E7 /* Objects.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Objects.hpp; sourceTree = "<group>"; };
+		8BA1F8D427E0CE4A004720E7 /* Skin.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Skin.hpp; sourceTree = "<group>"; };
+		8BA1F8D527E0CE4A004720E7 /* bhk.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = bhk.hpp; sourceTree = "<group>"; };
+		8BA1F8D627E0CE4A004720E7 /* Shaders.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Shaders.hpp; sourceTree = "<group>"; };
+		8BA1F8D727E0CE4A004720E7 /* ExtraData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ExtraData.hpp; sourceTree = "<group>"; };
+		8BA1F8D827E0CE4A004720E7 /* VertexData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = VertexData.hpp; sourceTree = "<group>"; };
+		8BA1F8D927E0CE4A004720E7 /* Geometry.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Geometry.hpp; sourceTree = "<group>"; };
+		8BA1F8DA27E0CE4A004720E7 /* Nodes.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Nodes.hpp; sourceTree = "<group>"; };
+		8BA1F8DB27E0CE4A004720E7 /* NifUtil.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NifUtil.hpp; sourceTree = "<group>"; };
+		8BA1F8DC27E0CE4A004720E7 /* KDMatcher.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = KDMatcher.hpp; sourceTree = "<group>"; };
+		8BA1F8DF27E0CE4A004720E7 /* TestNifFile_Animated_LE_expected.nif */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestNifFile_Animated_LE_expected.nif; sourceTree = "<group>"; };
+		8BA1F8E027E0CE4A004720E7 /* TestNifFile_Skinned_SE_expected.nif */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestNifFile_Skinned_SE_expected.nif; sourceTree = "<group>"; };
+		8BA1F8E127E0CE4A004720E7 /* TestNifFile_Furniture_Col_SE.nif */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestNifFile_Furniture_Col_SE.nif; sourceTree = "<group>"; };
+		8BA1F8E227E0CE4A004720E7 /* TestNifFile_Static_SE_expected.nif */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestNifFile_Static_SE_expected.nif; sourceTree = "<group>"; };
+		8BA1F8E327E0CE4A004720E7 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		8BA1F8E427E0CE4A004720E7 /* TestNifFile_Optimize_Dynamic_SE_to_LE.nif */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestNifFile_Optimize_Dynamic_SE_to_LE.nif; sourceTree = "<group>"; };
+		8BA1F8E527E0CE4A004720E7 /* TestNifFile_DeepGraph_SE_expected.nif */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestNifFile_DeepGraph_SE_expected.nif; sourceTree = "<group>"; };
+		8BA1F8E627E0CE4A004720E7 /* TestNifFile_Optimize_LE_to_SE.nif */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestNifFile_Optimize_LE_to_SE.nif; sourceTree = "<group>"; };
+		8BA1F8E727E0CE4A004720E7 /* TestNifFile_Static_FO4_expected.nif */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestNifFile_Static_FO4_expected.nif; sourceTree = "<group>"; };
+		8BA1F8E827E0CE4A004720E7 /* TestNifFile_Skinned_Dynamic_SE.nif */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestNifFile_Skinned_Dynamic_SE.nif; sourceTree = "<group>"; };
+		8BA1F8E927E0CE4A004720E7 /* TestNifFile_Optimize_Dynamic_LE_to_SE_expected.nif */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestNifFile_Optimize_Dynamic_LE_to_SE_expected.nif; sourceTree = "<group>"; };
+		8BA1F8EA27E0CE4A004720E7 /* TestNifFile_Skinned_OB.nif */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestNifFile_Skinned_OB.nif; sourceTree = "<group>"; };
+		8BA1F8EB27E0CE4A004720E7 /* TestNifFile_Optimize_Dynamic_SE_to_LE_expected.nif */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestNifFile_Optimize_Dynamic_SE_to_LE_expected.nif; sourceTree = "<group>"; };
+		8BA1F8EC27E0CE4A004720E7 /* TestNifFile_Skinned_OB_expected.nif */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestNifFile_Skinned_OB_expected.nif; sourceTree = "<group>"; };
+		8BA1F8ED27E0CE4A004720E7 /* TestNifFile_Optimize_SE_to_LE_expected.nif */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestNifFile_Optimize_SE_to_LE_expected.nif; sourceTree = "<group>"; };
+		8BA1F8EE27E0CE4A004720E7 /* TestNifFile_Optimize_LE_to_SE_expected.nif */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestNifFile_Optimize_LE_to_SE_expected.nif; sourceTree = "<group>"; };
+		8BA1F8EF27E0CE4A004720E7 /* TestNifFile_Furniture_Col_SE_expected.nif */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestNifFile_Furniture_Col_SE_expected.nif; sourceTree = "<group>"; };
+		8BA1F8F027E0CE4A004720E7 /* TestNifFile_Skinned_Dynamic_SE_expected.nif */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestNifFile_Skinned_Dynamic_SE_expected.nif; sourceTree = "<group>"; };
+		8BA1F8F127E0CE4A004720E7 /* TestNifFile_MultiBound_SE.nif */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestNifFile_MultiBound_SE.nif; sourceTree = "<group>"; };
+		8BA1F8F227E0CE4A004720E7 /* TestNifFile_Skinned_FO4_expected.nif */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestNifFile_Skinned_FO4_expected.nif; sourceTree = "<group>"; };
+		8BA1F8F327E0CE4A004720E7 /* TestNifFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestNifFile.cpp; sourceTree = "<group>"; };
+		8BA1F8F427E0CE4A004720E7 /* TestNifFile_Animated_LE.nif */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestNifFile_Animated_LE.nif; sourceTree = "<group>"; };
+		8BA1F8F527E0CE4A004720E7 /* TestNifFile_OrderedNode_SE.nif */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestNifFile_OrderedNode_SE.nif; sourceTree = "<group>"; };
+		8BA1F8F627E0CE4A004720E7 /* TestNifFile_Static_SE.nif */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestNifFile_Static_SE.nif; sourceTree = "<group>"; };
+		8BA1F8F727E0CE4A004720E7 /* TestNifFile_MultiBound_SE_expected.nif */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestNifFile_MultiBound_SE_expected.nif; sourceTree = "<group>"; };
+		8BA1F8F827E0CE4A004720E7 /* TestNifFile_Optimize_Dynamic_LE_to_SE.nif */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestNifFile_Optimize_Dynamic_LE_to_SE.nif; sourceTree = "<group>"; };
+		8BA1F8F927E0CE4A004720E7 /* TestNifFile_Optimize_SE_to_LE.nif */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestNifFile_Optimize_SE_to_LE.nif; sourceTree = "<group>"; };
+		8BA1F8FA27E0CE4A004720E7 /* TestNifFile_DeepGraph_SE.nif */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestNifFile_DeepGraph_SE.nif; sourceTree = "<group>"; };
+		8BA1F8FB27E0CE4A004720E7 /* TestNifFile_Skinned_SE.nif */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestNifFile_Skinned_SE.nif; sourceTree = "<group>"; };
+		8BA1F8FC27E0CE4A004720E7 /* TestNifFile_LooseBlocks_SE_expected.nif */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestNifFile_LooseBlocks_SE_expected.nif; sourceTree = "<group>"; };
+		8BA1F8FD27E0CE4A004720E7 /* TestNifFile_LooseBlocks_SE.nif */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestNifFile_LooseBlocks_SE.nif; sourceTree = "<group>"; };
+		8BA1F8FE27E0CE4A004720E7 /* TestNifFile_Static_FO4.nif */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestNifFile_Static_FO4.nif; sourceTree = "<group>"; };
+		8BA1F8FF27E0CE4A004720E7 /* TestNifFile_Skinned_FO4.nif */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestNifFile_Skinned_FO4.nif; sourceTree = "<group>"; };
+		8BA1F90027E0CE4A004720E7 /* TestNifFile_OrderedNode_SE_expected.nif */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestNifFile_OrderedNode_SE_expected.nif; sourceTree = "<group>"; };
+		8BA1F90227E0CE4A004720E7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8BA1F90927E0CE4A004720E7 /* Miniball.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Miniball.hpp; sourceTree = "<group>"; };
+		8BA1F90A27E0CE4A004720E7 /* half.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = half.hpp; sourceTree = "<group>"; };
+		8BA1F90C27E0CE4A004720E7 /* Geometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Geometry.cpp; sourceTree = "<group>"; };
+		8BA1F90E27E0CE4A004720E7 /* Nodes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Nodes.cpp; sourceTree = "<group>"; };
+		8BA1F90F27E0CE4A004720E7 /* Objects.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Objects.cpp; sourceTree = "<group>"; };
+		8BA1F91027E0CE4A004720E7 /* Skin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Skin.cpp; sourceTree = "<group>"; };
+		8BA1F91127E0CE4A004720E7 /* bhk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bhk.cpp; sourceTree = "<group>"; };
+		8BA1F91227E0CE4A004720E7 /* Shaders.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shaders.cpp; sourceTree = "<group>"; };
+		8BA1F91327E0CE4A004720E7 /* ExtraData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExtraData.cpp; sourceTree = "<group>"; };
+		8BA1F91427E0CE4A004720E7 /* BasicTypes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BasicTypes.cpp; sourceTree = "<group>"; };
+		8BA1F91527E0CE4A004720E7 /* Animation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Animation.cpp; sourceTree = "<group>"; };
+		8BA1F91627E0CE4A004720E7 /* NifFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NifFile.cpp; sourceTree = "<group>"; };
+		8BA1F91727E0CE4A004720E7 /* Object3d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Object3d.cpp; sourceTree = "<group>"; };
+		8BA1F91827E0CE4A004720E7 /* Particles.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Particles.cpp; sourceTree = "<group>"; };
+		8BA1F91927E0CE4A004720E7 /* Factory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Factory.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8BA1F7E527E0BC28004720E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BA1F88E27E0C38D004720E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BA1F89E27E0C99C004720E7 /* libc++.tbd in Frameworks */,
+				8BA1F89527E0C38D004720E7 /* libNifly.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8BA1F7DE27E0BC27004720E7 = {
+			isa = PBXGroup;
+			children = (
+				8BA1F8C527E0CE4A004720E7 /* Dependencies */,
+				8BA1F7E927E0BC28004720E7 /* SwiftNifly */,
+				8BA1F89227E0C38D004720E7 /* SwiftNiflyTests */,
+				8BA1F7E827E0BC28004720E7 /* Products */,
+				8BA1F89C27E0C99B004720E7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8BA1F7E827E0BC28004720E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BA1F7E727E0BC28004720E7 /* libNifly.a */,
+				8BA1F89127E0C38D004720E7 /* NiflyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BA1F7E927E0BC28004720E7 /* SwiftNifly */ = {
+			isa = PBXGroup;
+			children = (
+				8BA1F88427E0C157004720E7 /* Nifly.h */,
+				8BA1F88827E0C274004720E7 /* NiflyBridge.cpp */,
+				8BA1F88B27E0C301004720E7 /* Nifly.swift */,
+				8BA1F88527E0C157004720E7 /* NifFile.mm */,
+				8BA1F88A27E0C300004720E7 /* Nifly-Bridging-Header.h */,
+			);
+			path = SwiftNifly;
+			sourceTree = "<group>";
+		};
+		8BA1F89227E0C38D004720E7 /* SwiftNiflyTests */ = {
+			isa = PBXGroup;
+			children = (
+				8BA1F89327E0C38D004720E7 /* NiflyTests.swift */,
+			);
+			path = SwiftNiflyTests;
+			sourceTree = "<group>";
+		};
+		8BA1F89C27E0C99B004720E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BA1F89D27E0C99C004720E7 /* libc++.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8BA1F8C527E0CE4A004720E7 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				8BA1F8C627E0CE4A004720E7 /* nifly */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		8BA1F8C627E0CE4A004720E7 /* nifly */ = {
+			isa = PBXGroup;
+			children = (
+				8BA1F8C827E0CE4A004720E7 /* LICENSE */,
+				8BA1F8C927E0CE4A004720E7 /* cmake */,
+				8BA1F8CB27E0CE4A004720E7 /* include */,
+				8BA1F8DE27E0CE4A004720E7 /* tests */,
+				8BA1F90227E0CE4A004720E7 /* README.md */,
+				8BA1F90827E0CE4A004720E7 /* external */,
+				8BA1F90B27E0CE4A004720E7 /* src */,
+			);
+			path = nifly;
+			sourceTree = "<group>";
+		};
+		8BA1F8C927E0CE4A004720E7 /* cmake */ = {
+			isa = PBXGroup;
+			children = (
+				8BA1F8CA27E0CE4A004720E7 /* nifly-config.cmake.in */,
+			);
+			path = cmake;
+			sourceTree = "<group>";
+		};
+		8BA1F8CB27E0CE4A004720E7 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				8BA1F8CC27E0CE4A004720E7 /* Object3d.hpp */,
+				8BA1F8CD27E0CE4A004720E7 /* Particles.hpp */,
+				8BA1F8CE27E0CE4A004720E7 /* Factory.hpp */,
+				8BA1F8CF27E0CE4A004720E7 /* Keys.hpp */,
+				8BA1F8D027E0CE4A004720E7 /* Animation.hpp */,
+				8BA1F8D127E0CE4A004720E7 /* BasicTypes.hpp */,
+				8BA1F8D227E0CE4A004720E7 /* NifFile.hpp */,
+				8BA1F8D327E0CE4A004720E7 /* Objects.hpp */,
+				8BA1F8D427E0CE4A004720E7 /* Skin.hpp */,
+				8BA1F8D527E0CE4A004720E7 /* bhk.hpp */,
+				8BA1F8D627E0CE4A004720E7 /* Shaders.hpp */,
+				8BA1F8D727E0CE4A004720E7 /* ExtraData.hpp */,
+				8BA1F8D827E0CE4A004720E7 /* VertexData.hpp */,
+				8BA1F8D927E0CE4A004720E7 /* Geometry.hpp */,
+				8BA1F8DA27E0CE4A004720E7 /* Nodes.hpp */,
+				8BA1F8DB27E0CE4A004720E7 /* NifUtil.hpp */,
+				8BA1F8DC27E0CE4A004720E7 /* KDMatcher.hpp */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		8BA1F8DE27E0CE4A004720E7 /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				8BA1F8DF27E0CE4A004720E7 /* TestNifFile_Animated_LE_expected.nif */,
+				8BA1F8E027E0CE4A004720E7 /* TestNifFile_Skinned_SE_expected.nif */,
+				8BA1F8E127E0CE4A004720E7 /* TestNifFile_Furniture_Col_SE.nif */,
+				8BA1F8E227E0CE4A004720E7 /* TestNifFile_Static_SE_expected.nif */,
+				8BA1F8E327E0CE4A004720E7 /* CMakeLists.txt */,
+				8BA1F8E427E0CE4A004720E7 /* TestNifFile_Optimize_Dynamic_SE_to_LE.nif */,
+				8BA1F8E527E0CE4A004720E7 /* TestNifFile_DeepGraph_SE_expected.nif */,
+				8BA1F8E627E0CE4A004720E7 /* TestNifFile_Optimize_LE_to_SE.nif */,
+				8BA1F8E727E0CE4A004720E7 /* TestNifFile_Static_FO4_expected.nif */,
+				8BA1F8E827E0CE4A004720E7 /* TestNifFile_Skinned_Dynamic_SE.nif */,
+				8BA1F8E927E0CE4A004720E7 /* TestNifFile_Optimize_Dynamic_LE_to_SE_expected.nif */,
+				8BA1F8EA27E0CE4A004720E7 /* TestNifFile_Skinned_OB.nif */,
+				8BA1F8EB27E0CE4A004720E7 /* TestNifFile_Optimize_Dynamic_SE_to_LE_expected.nif */,
+				8BA1F8EC27E0CE4A004720E7 /* TestNifFile_Skinned_OB_expected.nif */,
+				8BA1F8ED27E0CE4A004720E7 /* TestNifFile_Optimize_SE_to_LE_expected.nif */,
+				8BA1F8EE27E0CE4A004720E7 /* TestNifFile_Optimize_LE_to_SE_expected.nif */,
+				8BA1F8EF27E0CE4A004720E7 /* TestNifFile_Furniture_Col_SE_expected.nif */,
+				8BA1F8F027E0CE4A004720E7 /* TestNifFile_Skinned_Dynamic_SE_expected.nif */,
+				8BA1F8F127E0CE4A004720E7 /* TestNifFile_MultiBound_SE.nif */,
+				8BA1F8F227E0CE4A004720E7 /* TestNifFile_Skinned_FO4_expected.nif */,
+				8BA1F8F327E0CE4A004720E7 /* TestNifFile.cpp */,
+				8BA1F8F427E0CE4A004720E7 /* TestNifFile_Animated_LE.nif */,
+				8BA1F8F527E0CE4A004720E7 /* TestNifFile_OrderedNode_SE.nif */,
+				8BA1F8F627E0CE4A004720E7 /* TestNifFile_Static_SE.nif */,
+				8BA1F8F727E0CE4A004720E7 /* TestNifFile_MultiBound_SE_expected.nif */,
+				8BA1F8F827E0CE4A004720E7 /* TestNifFile_Optimize_Dynamic_LE_to_SE.nif */,
+				8BA1F8F927E0CE4A004720E7 /* TestNifFile_Optimize_SE_to_LE.nif */,
+				8BA1F8FA27E0CE4A004720E7 /* TestNifFile_DeepGraph_SE.nif */,
+				8BA1F8FB27E0CE4A004720E7 /* TestNifFile_Skinned_SE.nif */,
+				8BA1F8FC27E0CE4A004720E7 /* TestNifFile_LooseBlocks_SE_expected.nif */,
+				8BA1F8FD27E0CE4A004720E7 /* TestNifFile_LooseBlocks_SE.nif */,
+				8BA1F8FE27E0CE4A004720E7 /* TestNifFile_Static_FO4.nif */,
+				8BA1F8FF27E0CE4A004720E7 /* TestNifFile_Skinned_FO4.nif */,
+				8BA1F90027E0CE4A004720E7 /* TestNifFile_OrderedNode_SE_expected.nif */,
+			);
+			path = tests;
+			sourceTree = "<group>";
+		};
+		8BA1F90827E0CE4A004720E7 /* external */ = {
+			isa = PBXGroup;
+			children = (
+				8BA1F90927E0CE4A004720E7 /* Miniball.hpp */,
+				8BA1F90A27E0CE4A004720E7 /* half.hpp */,
+			);
+			path = external;
+			sourceTree = "<group>";
+		};
+		8BA1F90B27E0CE4A004720E7 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				8BA1F90C27E0CE4A004720E7 /* Geometry.cpp */,
+				8BA1F90E27E0CE4A004720E7 /* Nodes.cpp */,
+				8BA1F90F27E0CE4A004720E7 /* Objects.cpp */,
+				8BA1F91027E0CE4A004720E7 /* Skin.cpp */,
+				8BA1F91127E0CE4A004720E7 /* bhk.cpp */,
+				8BA1F91227E0CE4A004720E7 /* Shaders.cpp */,
+				8BA1F91327E0CE4A004720E7 /* ExtraData.cpp */,
+				8BA1F91427E0CE4A004720E7 /* BasicTypes.cpp */,
+				8BA1F91527E0CE4A004720E7 /* Animation.cpp */,
+				8BA1F91627E0CE4A004720E7 /* NifFile.cpp */,
+				8BA1F91727E0CE4A004720E7 /* Object3d.cpp */,
+				8BA1F91827E0CE4A004720E7 /* Particles.cpp */,
+				8BA1F91927E0CE4A004720E7 /* Factory.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8BA1F7E327E0BC28004720E7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BA1F92127E0CE4A004720E7 /* Objects.hpp in Headers */,
+				8BA1F92227E0CE4A004720E7 /* Skin.hpp in Headers */,
+				8BA1F92027E0CE4A004720E7 /* NifFile.hpp in Headers */,
+				8BA1F91C27E0CE4A004720E7 /* Factory.hpp in Headers */,
+				8BA1F91B27E0CE4A004720E7 /* Particles.hpp in Headers */,
+				8BA1F91E27E0CE4A004720E7 /* Animation.hpp in Headers */,
+				8BA1F92727E0CE4A004720E7 /* Geometry.hpp in Headers */,
+				8BA1F92327E0CE4A004720E7 /* bhk.hpp in Headers */,
+				8BA1F92A27E0CE4A004720E7 /* KDMatcher.hpp in Headers */,
+				8BA1F91F27E0CE4A004720E7 /* BasicTypes.hpp in Headers */,
+				8BA1F92927E0CE4A004720E7 /* NifUtil.hpp in Headers */,
+				8BA1F92527E0CE4A004720E7 /* ExtraData.hpp in Headers */,
+				8BA1F92627E0CE4A004720E7 /* VertexData.hpp in Headers */,
+				8BA1F91A27E0CE4A004720E7 /* Object3d.hpp in Headers */,
+				8BA1F92827E0CE4A004720E7 /* Nodes.hpp in Headers */,
+				8BA1F88627E0C157004720E7 /* Nifly.h in Headers */,
+				8BA1F91D27E0CE4A004720E7 /* Keys.hpp in Headers */,
+				8BA1F92427E0CE4A004720E7 /* Shaders.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8BA1F7E627E0BC28004720E7 /* Nifly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BA1F7F027E0BC28004720E7 /* Build configuration list for PBXNativeTarget "Nifly" */;
+			buildPhases = (
+				8BA1F7E327E0BC28004720E7 /* Headers */,
+				8BA1F7E427E0BC28004720E7 /* Sources */,
+				8BA1F7E527E0BC28004720E7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nifly;
+			productName = Nifly;
+			productReference = 8BA1F7E727E0BC28004720E7 /* libNifly.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8BA1F89027E0C38D004720E7 /* NiflyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BA1F89827E0C38D004720E7 /* Build configuration list for PBXNativeTarget "NiflyTests" */;
+			buildPhases = (
+				8BA1F88D27E0C38D004720E7 /* Sources */,
+				8BA1F88E27E0C38D004720E7 /* Frameworks */,
+				8BA1F88F27E0C38D004720E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BA1F89727E0C38D004720E7 /* PBXTargetDependency */,
+			);
+			name = NiflyTests;
+			productName = NiflyTests;
+			productReference = 8BA1F89127E0C38D004720E7 /* NiflyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BA1F7DF27E0BC27004720E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					8BA1F7E627E0BC28004720E7 = {
+						CreatedOnToolsVersion = 13.3;
+						LastSwiftMigration = 1330;
+					};
+					8BA1F89027E0C38D004720E7 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = 8BA1F7E227E0BC27004720E7 /* Build configuration list for PBXProject "SwiftNifly" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8BA1F7DE27E0BC27004720E7;
+			productRefGroup = 8BA1F7E827E0BC28004720E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BA1F7E627E0BC28004720E7 /* Nifly */,
+				8BA1F89027E0C38D004720E7 /* NiflyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8BA1F88F27E0C38D004720E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BA1F7E427E0BC28004720E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BA1F93927E0CE4A004720E7 /* Particles.cpp in Sources */,
+				8BA1F93727E0CE4A004720E7 /* NifFile.cpp in Sources */,
+				8BA1F89B27E0C665004720E7 /* NifFile.mm in Sources */,
+				8BA1F93327E0CE4A004720E7 /* Shaders.cpp in Sources */,
+				8BA1F93027E0CE4A004720E7 /* Objects.cpp in Sources */,
+				8BA1F92E27E0CE4A004720E7 /* Geometry.cpp in Sources */,
+				8BA1F92F27E0CE4A004720E7 /* Nodes.cpp in Sources */,
+				8BA1F88C27E0C301004720E7 /* Nifly.swift in Sources */,
+				8BA1F88927E0C274004720E7 /* NiflyBridge.cpp in Sources */,
+				8BA1F93527E0CE4A004720E7 /* BasicTypes.cpp in Sources */,
+				8BA1F93A27E0CE4A004720E7 /* Factory.cpp in Sources */,
+				8BA1F93127E0CE4A004720E7 /* Skin.cpp in Sources */,
+				8BA1F93427E0CE4A004720E7 /* ExtraData.cpp in Sources */,
+				8BA1F93627E0CE4A004720E7 /* Animation.cpp in Sources */,
+				8BA1F93227E0CE4A004720E7 /* bhk.cpp in Sources */,
+				8BA1F93827E0CE4A004720E7 /* Object3d.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BA1F88D27E0C38D004720E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BA1F89427E0C38D004720E7 /* NiflyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8BA1F89727E0C38D004720E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BA1F7E627E0BC28004720E7 /* Nifly */;
+			targetProxy = 8BA1F89627E0C38D004720E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8BA1F7EE27E0BC28004720E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8BA1F7EF27E0BC28004720E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8BA1F7F127E0BC28004720E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2H48644JM2;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftNifly/Nifly-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					Dependencies/nifly/external,
+				);
+			};
+			name = Debug;
+		};
+		8BA1F7F227E0BC28004720E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2H48644JM2;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftNifly/Nifly-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					Dependencies/nifly/external,
+				);
+			};
+			name = Release;
+		};
+		8BA1F89927E0C38D004720E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2H48644JM2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elegantchaos.NiflyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8BA1F89A27E0C38D004720E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2H48644JM2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elegantchaos.NiflyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BA1F7E227E0BC27004720E7 /* Build configuration list for PBXProject "SwiftNifly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BA1F7EE27E0BC28004720E7 /* Debug */,
+				8BA1F7EF27E0BC28004720E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BA1F7F027E0BC28004720E7 /* Build configuration list for PBXNativeTarget "Nifly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BA1F7F127E0BC28004720E7 /* Debug */,
+				8BA1F7F227E0BC28004720E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BA1F89827E0C38D004720E7 /* Build configuration list for PBXNativeTarget "NiflyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BA1F89927E0C38D004720E7 /* Debug */,
+				8BA1F89A27E0C38D004720E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8BA1F7DF27E0BC27004720E7 /* Project object */;
+}
