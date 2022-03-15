@@ -11,26 +11,9 @@
 		8BA1F88927E0C274004720E7 /* NiflyBridge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1F88827E0C274004720E7 /* NiflyBridge.cpp */; };
 		8BA1F88C27E0C301004720E7 /* Nifly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1F88B27E0C301004720E7 /* Nifly.swift */; };
 		8BA1F89427E0C38D004720E7 /* NiflyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1F89327E0C38D004720E7 /* NiflyTests.swift */; };
-		8BA1F89527E0C38D004720E7 /* libNifly.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA1F7E727E0BC28004720E7 /* libNifly.a */; };
+		8BA1F89527E0C38D004720E7 /* libSwiftNifly.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA1F7E727E0BC28004720E7 /* libSwiftNifly.a */; };
 		8BA1F89B27E0C665004720E7 /* NifFile.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1F88527E0C157004720E7 /* NifFile.mm */; };
 		8BA1F89E27E0C99C004720E7 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA1F89D27E0C99C004720E7 /* libc++.tbd */; };
-		8BA1F91A27E0CE4A004720E7 /* Object3d.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8BA1F8CC27E0CE4A004720E7 /* Object3d.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
-		8BA1F91B27E0CE4A004720E7 /* Particles.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8BA1F8CD27E0CE4A004720E7 /* Particles.hpp */; };
-		8BA1F91C27E0CE4A004720E7 /* Factory.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8BA1F8CE27E0CE4A004720E7 /* Factory.hpp */; };
-		8BA1F91D27E0CE4A004720E7 /* Keys.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8BA1F8CF27E0CE4A004720E7 /* Keys.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
-		8BA1F91E27E0CE4A004720E7 /* Animation.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8BA1F8D027E0CE4A004720E7 /* Animation.hpp */; };
-		8BA1F91F27E0CE4A004720E7 /* BasicTypes.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8BA1F8D127E0CE4A004720E7 /* BasicTypes.hpp */; };
-		8BA1F92027E0CE4A004720E7 /* NifFile.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8BA1F8D227E0CE4A004720E7 /* NifFile.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
-		8BA1F92127E0CE4A004720E7 /* Objects.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8BA1F8D327E0CE4A004720E7 /* Objects.hpp */; };
-		8BA1F92227E0CE4A004720E7 /* Skin.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8BA1F8D427E0CE4A004720E7 /* Skin.hpp */; };
-		8BA1F92327E0CE4A004720E7 /* bhk.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8BA1F8D527E0CE4A004720E7 /* bhk.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
-		8BA1F92427E0CE4A004720E7 /* Shaders.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8BA1F8D627E0CE4A004720E7 /* Shaders.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
-		8BA1F92527E0CE4A004720E7 /* ExtraData.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8BA1F8D727E0CE4A004720E7 /* ExtraData.hpp */; };
-		8BA1F92627E0CE4A004720E7 /* VertexData.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8BA1F8D827E0CE4A004720E7 /* VertexData.hpp */; };
-		8BA1F92727E0CE4A004720E7 /* Geometry.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8BA1F8D927E0CE4A004720E7 /* Geometry.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
-		8BA1F92827E0CE4A004720E7 /* Nodes.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8BA1F8DA27E0CE4A004720E7 /* Nodes.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
-		8BA1F92927E0CE4A004720E7 /* NifUtil.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8BA1F8DB27E0CE4A004720E7 /* NifUtil.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
-		8BA1F92A27E0CE4A004720E7 /* KDMatcher.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8BA1F8DC27E0CE4A004720E7 /* KDMatcher.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 		8BA1F92E27E0CE4A004720E7 /* Geometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1F90C27E0CE4A004720E7 /* Geometry.cpp */; };
 		8BA1F92F27E0CE4A004720E7 /* Nodes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1F90E27E0CE4A004720E7 /* Nodes.cpp */; };
 		8BA1F93027E0CE4A004720E7 /* Objects.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1F90F27E0CE4A004720E7 /* Objects.cpp */; };
@@ -90,13 +73,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8BA1F7E727E0BC28004720E7 /* libNifly.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNifly.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BA1F7E727E0BC28004720E7 /* libSwiftNifly.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSwiftNifly.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BA1F88427E0C157004720E7 /* NifFileWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NifFileWrapper.h; sourceTree = "<group>"; };
 		8BA1F88527E0C157004720E7 /* NifFile.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NifFile.mm; sourceTree = "<group>"; };
 		8BA1F88827E0C274004720E7 /* NiflyBridge.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NiflyBridge.cpp; sourceTree = "<group>"; };
 		8BA1F88A27E0C300004720E7 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		8BA1F88B27E0C301004720E7 /* Nifly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nifly.swift; sourceTree = "<group>"; };
-		8BA1F89127E0C38D004720E7 /* NiflyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NiflyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BA1F89127E0C38D004720E7 /* SwiftNiflyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftNiflyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BA1F89327E0C38D004720E7 /* NiflyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiflyTests.swift; sourceTree = "<group>"; };
 		8BA1F89D27E0C99C004720E7 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		8BA1F8C827E0CE4A004720E7 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -168,6 +151,7 @@
 		8BA1F91727E0CE4A004720E7 /* Object3d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Object3d.cpp; sourceTree = "<group>"; };
 		8BA1F91827E0CE4A004720E7 /* Particles.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Particles.cpp; sourceTree = "<group>"; };
 		8BA1F91927E0CE4A004720E7 /* Factory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Factory.cpp; sourceTree = "<group>"; };
+		8BA1F95E27E0DDED004720E7 /* Extras */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Extras; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,7 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BA1F89E27E0C99C004720E7 /* libc++.tbd in Frameworks */,
-				8BA1F89527E0C38D004720E7 /* libNifly.a in Frameworks */,
+				8BA1F89527E0C38D004720E7 /* libSwiftNifly.a in Frameworks */,
 				8BA1F95D27E0D508004720E7 /* XCTestExtensions in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,6 +181,7 @@
 				8BA1F8C527E0CE4A004720E7 /* Dependencies */,
 				8BA1F7E927E0BC28004720E7 /* SwiftNifly */,
 				8BA1F89227E0C38D004720E7 /* SwiftNiflyTests */,
+				8BA1F95E27E0DDED004720E7 /* Extras */,
 				8BA1F7E827E0BC28004720E7 /* Products */,
 				8BA1F89C27E0C99B004720E7 /* Frameworks */,
 			);
@@ -205,8 +190,8 @@
 		8BA1F7E827E0BC28004720E7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8BA1F7E727E0BC28004720E7 /* libNifly.a */,
-				8BA1F89127E0C38D004720E7 /* NiflyTests.xctest */,
+				8BA1F7E727E0BC28004720E7 /* libSwiftNifly.a */,
+				8BA1F89127E0C38D004720E7 /* SwiftNiflyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -370,33 +355,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BA1F92127E0CE4A004720E7 /* Objects.hpp in Headers */,
-				8BA1F92227E0CE4A004720E7 /* Skin.hpp in Headers */,
-				8BA1F92027E0CE4A004720E7 /* NifFile.hpp in Headers */,
-				8BA1F91C27E0CE4A004720E7 /* Factory.hpp in Headers */,
-				8BA1F91B27E0CE4A004720E7 /* Particles.hpp in Headers */,
-				8BA1F91E27E0CE4A004720E7 /* Animation.hpp in Headers */,
-				8BA1F92727E0CE4A004720E7 /* Geometry.hpp in Headers */,
-				8BA1F92327E0CE4A004720E7 /* bhk.hpp in Headers */,
-				8BA1F92A27E0CE4A004720E7 /* KDMatcher.hpp in Headers */,
-				8BA1F91F27E0CE4A004720E7 /* BasicTypes.hpp in Headers */,
-				8BA1F92927E0CE4A004720E7 /* NifUtil.hpp in Headers */,
-				8BA1F92527E0CE4A004720E7 /* ExtraData.hpp in Headers */,
-				8BA1F92627E0CE4A004720E7 /* VertexData.hpp in Headers */,
-				8BA1F91A27E0CE4A004720E7 /* Object3d.hpp in Headers */,
-				8BA1F92827E0CE4A004720E7 /* Nodes.hpp in Headers */,
 				8BA1F88627E0C157004720E7 /* NifFileWrapper.h in Headers */,
-				8BA1F91D27E0CE4A004720E7 /* Keys.hpp in Headers */,
-				8BA1F92427E0CE4A004720E7 /* Shaders.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		8BA1F7E627E0BC28004720E7 /* Nifly */ = {
+		8BA1F7E627E0BC28004720E7 /* SwiftNifly */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8BA1F7F027E0BC28004720E7 /* Build configuration list for PBXNativeTarget "Nifly" */;
+			buildConfigurationList = 8BA1F7F027E0BC28004720E7 /* Build configuration list for PBXNativeTarget "SwiftNifly" */;
 			buildPhases = (
 				8BA1F7E327E0BC28004720E7 /* Headers */,
 				8BA1F7E427E0BC28004720E7 /* Sources */,
@@ -406,14 +374,14 @@
 			);
 			dependencies = (
 			);
-			name = Nifly;
+			name = SwiftNifly;
 			productName = Nifly;
-			productReference = 8BA1F7E727E0BC28004720E7 /* libNifly.a */;
+			productReference = 8BA1F7E727E0BC28004720E7 /* libSwiftNifly.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		8BA1F89027E0C38D004720E7 /* NiflyTests */ = {
+		8BA1F89027E0C38D004720E7 /* SwiftNiflyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8BA1F89827E0C38D004720E7 /* Build configuration list for PBXNativeTarget "NiflyTests" */;
+			buildConfigurationList = 8BA1F89827E0C38D004720E7 /* Build configuration list for PBXNativeTarget "SwiftNiflyTests" */;
 			buildPhases = (
 				8BA1F88D27E0C38D004720E7 /* Sources */,
 				8BA1F88E27E0C38D004720E7 /* Frameworks */,
@@ -424,12 +392,12 @@
 			dependencies = (
 				8BA1F89727E0C38D004720E7 /* PBXTargetDependency */,
 			);
-			name = NiflyTests;
+			name = SwiftNiflyTests;
 			packageProductDependencies = (
 				8BA1F95C27E0D508004720E7 /* XCTestExtensions */,
 			);
 			productName = NiflyTests;
-			productReference = 8BA1F89127E0C38D004720E7 /* NiflyTests.xctest */;
+			productReference = 8BA1F89127E0C38D004720E7 /* SwiftNiflyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -467,8 +435,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8BA1F7E627E0BC28004720E7 /* Nifly */,
-				8BA1F89027E0C38D004720E7 /* NiflyTests */,
+				8BA1F7E627E0BC28004720E7 /* SwiftNifly */,
+				8BA1F89027E0C38D004720E7 /* SwiftNiflyTests */,
 			);
 		};
 /* End PBXProject section */
@@ -552,7 +520,7 @@
 /* Begin PBXTargetDependency section */
 		8BA1F89727E0C38D004720E7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8BA1F7E627E0BC28004720E7 /* Nifly */;
+			target = 8BA1F7E627E0BC28004720E7 /* SwiftNifly */;
 			targetProxy = 8BA1F89627E0C38D004720E7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -764,7 +732,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8BA1F7F027E0BC28004720E7 /* Build configuration list for PBXNativeTarget "Nifly" */ = {
+		8BA1F7F027E0BC28004720E7 /* Build configuration list for PBXNativeTarget "SwiftNifly" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8BA1F7F127E0BC28004720E7 /* Debug */,
@@ -773,7 +741,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8BA1F89827E0C38D004720E7 /* Build configuration list for PBXNativeTarget "NiflyTests" */ = {
+		8BA1F89827E0C38D004720E7 /* Build configuration list for PBXNativeTarget "SwiftNiflyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8BA1F89927E0C38D004720E7 /* Debug */,

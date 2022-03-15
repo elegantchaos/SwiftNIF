@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8BA1F7E627E0BC28004720E7"
                BuildableName = "libNifly.a"
-               BlueprintName = "Nifly"
+               BlueprintName = "SwiftNifly"
                ReferencedContainer = "container:SwiftNifly.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -41,7 +41,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8BA1F89027E0C38D004720E7"
                BuildableName = "NiflyTests.xctest"
-               BlueprintName = "NiflyTests"
+               BlueprintName = "SwiftNiflyTests"
                ReferencedContainer = "container:SwiftNifly.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -69,7 +69,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8BA1F7E627E0BC28004720E7"
             BuildableName = "libNifly.a"
-            BlueprintName = "Nifly"
+            BlueprintName = "SwiftNifly"
             ReferencedContainer = "container:SwiftNifly.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
