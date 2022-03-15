@@ -46,21 +46,33 @@ let package = Package(
                 dependencies: [
                     "nifly"
                 ],
+                publicHeadersPath: "include",
                 cSettings: [
                     .unsafeFlags(["-fmodules"])
                 ],
                 cxxSettings: [
-                    .unsafeFlags(["-fcxx-modules", "-std=c++17"])
+                    .unsafeFlags(["-fcxx-modules", "--include-directory", "Dependencies/nifly/external"])
                 ]
             ),
         
             .target(
                 name: "nifly",
-//                sources: [
-//                    "Dependencies/nifly/src/"
-//                ],
+                path: "Dependencies/nifly/",
+                exclude: [
+                    "tests/",
+                    "cmake/nifly-config.cmake.in",
+                    "CMakeLists.txt",
+                    "README.md",
+                    "LICENSE",
+                    "src/CMakeLists.txt"
+                ],
+                sources: [
+                    "include/",
+                    "external/",
+                    "src/"
+                ],
                 cxxSettings: [
-                    .unsafeFlags(["-std=c++17"])
+                    .unsafeFlags(["-std=c++17", "--include-directory", "Dependencies/nifly/external"])
                 ]
             )
     ]
