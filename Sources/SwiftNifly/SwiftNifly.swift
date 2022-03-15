@@ -8,7 +8,7 @@
 import Foundation
 import ObjCNifly
 
-func test() {
+public func swiftTest() {
     let nf = NifFile()
     print(nf)
 }

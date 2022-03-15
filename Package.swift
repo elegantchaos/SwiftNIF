@@ -1,5 +1,5 @@
 
-// swift-tools-version:5.6
+// swift-tools-version:5.5
 
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 //  Created by Sam Deane on 31/01/2022.
@@ -13,7 +13,21 @@ let package = Package(
     platforms: [
         .macOS(.v12)
     ],
+    dependencies: [
+        .package(url: "https://github.com/elegantchaos/XCTestExtensions", from: "1.4.6")
+    ],
     targets: [
+        .testTarget(
+            name: "SwiftNiflyTests",
+            dependencies: [
+                "SwiftNifly",
+                "XCTestExtensions"
+            ],
+            resources: [
+                .process("Resources")
+            ]
+        ),
+        
         .target(
             name: "SwiftNifly",
             dependencies: [
@@ -26,22 +40,25 @@ let package = Package(
                 .unsafeFlags(["-fcxx-modules", "-std=c++17"])
             ]
         ),
-
+        
             .target(
-            name: "ObjCNifly",
-            dependencies: [
-                "nifly"
-            ],
-            cSettings: [
-                .unsafeFlags(["-fmodules"])
-            ],
-            cxxSettings: [
-                .unsafeFlags(["-fcxx-modules", "-std=c++17"])
-            ]
-        ),
+                name: "ObjCNifly",
+                dependencies: [
+                    "nifly"
+                ],
+                cSettings: [
+                    .unsafeFlags(["-fmodules"])
+                ],
+                cxxSettings: [
+                    .unsafeFlags(["-fcxx-modules", "-std=c++17"])
+                ]
+            ),
         
             .target(
                 name: "nifly",
+//                sources: [
+//                    "Dependencies/nifly/src/"
+//                ],
                 cxxSettings: [
                     .unsafeFlags(["-std=c++17"])
                 ]

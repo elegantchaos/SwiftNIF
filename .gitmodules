@@ -1,0 +1,3 @@
+[submodule "Dependencies/nifly"]
+	path = Dependencies/nifly
+	url = git@github.com:ousnius/nifly
