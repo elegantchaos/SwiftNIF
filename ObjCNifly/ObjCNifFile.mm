@@ -1,15 +1,16 @@
-//
-//  Nifly.m
-//  Nifly
-//
-//  Created by Sam Deane on 15/03/2022.
-//
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+//  Created by Sam Deane on 15/03/22.
+//  All code (c) 2022 - present day, Elegant Chaos Limited.
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
 #import <Foundation/Foundation.h>
 
-#import "NifFileWrapper.h"
-
+#import "ObjCNifFile.h"
 #import "NifFile.hpp"
+
+void objcTest() {
+    printf("blah");
+}
 
 @interface NifFile() {
     nifly::NifFile *file;

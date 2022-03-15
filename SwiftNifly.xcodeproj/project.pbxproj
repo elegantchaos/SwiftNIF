@@ -7,13 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8BA1F88627E0C157004720E7 /* NifFileWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BA1F88427E0C157004720E7 /* NifFileWrapper.h */; };
-		8BA1F88927E0C274004720E7 /* NiflyBridge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1F88827E0C274004720E7 /* NiflyBridge.cpp */; };
-		8BA1F88C27E0C301004720E7 /* Nifly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1F88B27E0C301004720E7 /* Nifly.swift */; };
-		8BA1F89427E0C38D004720E7 /* NiflyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1F89327E0C38D004720E7 /* NiflyTests.swift */; };
-		8BA1F89527E0C38D004720E7 /* libSwiftNifly.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA1F7E727E0BC28004720E7 /* libSwiftNifly.a */; };
-		8BA1F89B27E0C665004720E7 /* NifFile.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1F88527E0C157004720E7 /* NifFile.mm */; };
-		8BA1F89E27E0C99C004720E7 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA1F89D27E0C99C004720E7 /* libc++.tbd */; };
+		8BA1F88627E0C157004720E7 /* ObjCNifFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BA1F88427E0C157004720E7 /* ObjCNifFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BA1F89B27E0C665004720E7 /* ObjCNifFile.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1F88527E0C157004720E7 /* ObjCNifFile.mm */; };
 		8BA1F92E27E0CE4A004720E7 /* Geometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1F90C27E0CE4A004720E7 /* Geometry.cpp */; };
 		8BA1F92F27E0CE4A004720E7 /* Nodes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1F90E27E0CE4A004720E7 /* Nodes.cpp */; };
 		8BA1F93027E0CE4A004720E7 /* Objects.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1F90F27E0CE4A004720E7 /* Objects.cpp */; };
@@ -27,60 +22,12 @@
 		8BA1F93827E0CE4A004720E7 /* Object3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1F91727E0CE4A004720E7 /* Object3d.cpp */; };
 		8BA1F93927E0CE4A004720E7 /* Particles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1F91827E0CE4A004720E7 /* Particles.cpp */; };
 		8BA1F93A27E0CE4A004720E7 /* Factory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1F91927E0CE4A004720E7 /* Factory.cpp */; };
-		8BA1F93B27E0D4B9004720E7 /* TestNifFile_Optimize_Dynamic_LE_to_SE.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8F827E0CE4A004720E7 /* TestNifFile_Optimize_Dynamic_LE_to_SE.nif */; };
-		8BA1F93C27E0D4B9004720E7 /* TestNifFile_Optimize_SE_to_LE.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8F927E0CE4A004720E7 /* TestNifFile_Optimize_SE_to_LE.nif */; };
-		8BA1F93D27E0D4B9004720E7 /* TestNifFile_Optimize_LE_to_SE_expected.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8EE27E0CE4A004720E7 /* TestNifFile_Optimize_LE_to_SE_expected.nif */; };
-		8BA1F93E27E0D4B9004720E7 /* TestNifFile_Furniture_Col_SE_expected.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8EF27E0CE4A004720E7 /* TestNifFile_Furniture_Col_SE_expected.nif */; };
-		8BA1F93F27E0D4B9004720E7 /* TestNifFile_Optimize_SE_to_LE_expected.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8ED27E0CE4A004720E7 /* TestNifFile_Optimize_SE_to_LE_expected.nif */; };
-		8BA1F94027E0D4B9004720E7 /* TestNifFile_Static_SE.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8F627E0CE4A004720E7 /* TestNifFile_Static_SE.nif */; };
-		8BA1F94127E0D4B9004720E7 /* TestNifFile_Animated_LE_expected.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8DF27E0CE4A004720E7 /* TestNifFile_Animated_LE_expected.nif */; };
-		8BA1F94227E0D4B9004720E7 /* TestNifFile_Skinned_SE.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8FB27E0CE4A004720E7 /* TestNifFile_Skinned_SE.nif */; };
-		8BA1F94327E0D4B9004720E7 /* TestNifFile_Static_FO4.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8FE27E0CE4A004720E7 /* TestNifFile_Static_FO4.nif */; };
-		8BA1F94427E0D4B9004720E7 /* TestNifFile_Skinned_FO4_expected.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8F227E0CE4A004720E7 /* TestNifFile_Skinned_FO4_expected.nif */; };
-		8BA1F94527E0D4B9004720E7 /* TestNifFile_Skinned_OB.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8EA27E0CE4A004720E7 /* TestNifFile_Skinned_OB.nif */; };
-		8BA1F94627E0D4B9004720E7 /* TestNifFile_OrderedNode_SE_expected.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F90027E0CE4A004720E7 /* TestNifFile_OrderedNode_SE_expected.nif */; };
-		8BA1F94727E0D4B9004720E7 /* TestNifFile_Optimize_Dynamic_SE_to_LE.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8E427E0CE4A004720E7 /* TestNifFile_Optimize_Dynamic_SE_to_LE.nif */; };
-		8BA1F94827E0D4B9004720E7 /* TestNifFile_Animated_LE.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8F427E0CE4A004720E7 /* TestNifFile_Animated_LE.nif */; };
-		8BA1F94927E0D4B9004720E7 /* TestNifFile_Static_FO4_expected.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8E727E0CE4A004720E7 /* TestNifFile_Static_FO4_expected.nif */; };
-		8BA1F94A27E0D4B9004720E7 /* TestNifFile_Skinned_Dynamic_SE.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8E827E0CE4A004720E7 /* TestNifFile_Skinned_Dynamic_SE.nif */; };
-		8BA1F94B27E0D4B9004720E7 /* TestNifFile_MultiBound_SE.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8F127E0CE4A004720E7 /* TestNifFile_MultiBound_SE.nif */; };
-		8BA1F94C27E0D4B9004720E7 /* TestNifFile_Skinned_Dynamic_SE_expected.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8F027E0CE4A004720E7 /* TestNifFile_Skinned_Dynamic_SE_expected.nif */; };
-		8BA1F94D27E0D4B9004720E7 /* TestNifFile_Static_SE_expected.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8E227E0CE4A004720E7 /* TestNifFile_Static_SE_expected.nif */; };
-		8BA1F94E27E0D4B9004720E7 /* TestNifFile_Skinned_FO4.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8FF27E0CE4A004720E7 /* TestNifFile_Skinned_FO4.nif */; };
-		8BA1F94F27E0D4B9004720E7 /* TestNifFile_DeepGraph_SE.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8FA27E0CE4A004720E7 /* TestNifFile_DeepGraph_SE.nif */; };
-		8BA1F95027E0D4B9004720E7 /* TestNifFile_Furniture_Col_SE.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8E127E0CE4A004720E7 /* TestNifFile_Furniture_Col_SE.nif */; };
-		8BA1F95127E0D4B9004720E7 /* TestNifFile_Optimize_Dynamic_LE_to_SE_expected.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8E927E0CE4A004720E7 /* TestNifFile_Optimize_Dynamic_LE_to_SE_expected.nif */; };
-		8BA1F95227E0D4B9004720E7 /* TestNifFile_MultiBound_SE_expected.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8F727E0CE4A004720E7 /* TestNifFile_MultiBound_SE_expected.nif */; };
-		8BA1F95327E0D4B9004720E7 /* TestNifFile_LooseBlocks_SE_expected.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8FC27E0CE4A004720E7 /* TestNifFile_LooseBlocks_SE_expected.nif */; };
-		8BA1F95427E0D4B9004720E7 /* TestNifFile_LooseBlocks_SE.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8FD27E0CE4A004720E7 /* TestNifFile_LooseBlocks_SE.nif */; };
-		8BA1F95527E0D4B9004720E7 /* TestNifFile_OrderedNode_SE.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8F527E0CE4A004720E7 /* TestNifFile_OrderedNode_SE.nif */; };
-		8BA1F95627E0D4B9004720E7 /* TestNifFile_Optimize_Dynamic_SE_to_LE_expected.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8EB27E0CE4A004720E7 /* TestNifFile_Optimize_Dynamic_SE_to_LE_expected.nif */; };
-		8BA1F95727E0D4B9004720E7 /* TestNifFile_DeepGraph_SE_expected.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8E527E0CE4A004720E7 /* TestNifFile_DeepGraph_SE_expected.nif */; };
-		8BA1F95827E0D4B9004720E7 /* TestNifFile_Optimize_LE_to_SE.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8E627E0CE4A004720E7 /* TestNifFile_Optimize_LE_to_SE.nif */; };
-		8BA1F95927E0D4B9004720E7 /* TestNifFile_Skinned_OB_expected.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8EC27E0CE4A004720E7 /* TestNifFile_Skinned_OB_expected.nif */; };
-		8BA1F95A27E0D4B9004720E7 /* TestNifFile_Skinned_SE_expected.nif in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1F8E027E0CE4A004720E7 /* TestNifFile_Skinned_SE_expected.nif */; };
-		8BA1F95D27E0D508004720E7 /* XCTestExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 8BA1F95C27E0D508004720E7 /* XCTestExtensions */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		8BA1F89627E0C38D004720E7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8BA1F7DF27E0BC27004720E7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8BA1F7E627E0BC28004720E7;
-			remoteInfo = Nifly;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		8BA1F7E727E0BC28004720E7 /* libSwiftNifly.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSwiftNifly.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		8BA1F88427E0C157004720E7 /* NifFileWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NifFileWrapper.h; sourceTree = "<group>"; };
-		8BA1F88527E0C157004720E7 /* NifFile.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NifFile.mm; sourceTree = "<group>"; };
-		8BA1F88827E0C274004720E7 /* NiflyBridge.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NiflyBridge.cpp; sourceTree = "<group>"; };
-		8BA1F88A27E0C300004720E7 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
-		8BA1F88B27E0C301004720E7 /* Nifly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nifly.swift; sourceTree = "<group>"; };
-		8BA1F89127E0C38D004720E7 /* SwiftNiflyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftNiflyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8BA1F89327E0C38D004720E7 /* NiflyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiflyTests.swift; sourceTree = "<group>"; };
+		8BA1F7E727E0BC28004720E7 /* libObjCNifly.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libObjCNifly.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BA1F88427E0C157004720E7 /* ObjCNifFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCNifFile.h; sourceTree = "<group>"; };
+		8BA1F88527E0C157004720E7 /* ObjCNifFile.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ObjCNifFile.mm; sourceTree = "<group>"; };
 		8BA1F89D27E0C99C004720E7 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		8BA1F8C827E0CE4A004720E7 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		8BA1F8CA27E0CE4A004720E7 /* nifly-config.cmake.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "nifly-config.cmake.in"; sourceTree = "<group>"; };
@@ -152,6 +99,7 @@
 		8BA1F91827E0CE4A004720E7 /* Particles.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Particles.cpp; sourceTree = "<group>"; };
 		8BA1F91927E0CE4A004720E7 /* Factory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Factory.cpp; sourceTree = "<group>"; };
 		8BA1F95E27E0DDED004720E7 /* Extras */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Extras; sourceTree = "<group>"; };
+		8BD13F1227E0EAED00FEDE6E /* Package */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Package; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,25 +110,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8BA1F88E27E0C38D004720E7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8BA1F89E27E0C99C004720E7 /* libc++.tbd in Frameworks */,
-				8BA1F89527E0C38D004720E7 /* libSwiftNifly.a in Frameworks */,
-				8BA1F95D27E0D508004720E7 /* XCTestExtensions in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		8BA1F7DE27E0BC27004720E7 = {
 			isa = PBXGroup;
 			children = (
+				8BD13F1227E0EAED00FEDE6E /* Package */,
 				8BA1F8C527E0CE4A004720E7 /* Dependencies */,
-				8BA1F7E927E0BC28004720E7 /* SwiftNifly */,
-				8BA1F89227E0C38D004720E7 /* SwiftNiflyTests */,
+				8BA1F7E927E0BC28004720E7 /* ObjCNifly */,
 				8BA1F95E27E0DDED004720E7 /* Extras */,
 				8BA1F7E827E0BC28004720E7 /* Products */,
 				8BA1F89C27E0C99B004720E7 /* Frameworks */,
@@ -190,30 +128,18 @@
 		8BA1F7E827E0BC28004720E7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8BA1F7E727E0BC28004720E7 /* libSwiftNifly.a */,
-				8BA1F89127E0C38D004720E7 /* SwiftNiflyTests.xctest */,
+				8BA1F7E727E0BC28004720E7 /* libObjCNifly.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8BA1F7E927E0BC28004720E7 /* SwiftNifly */ = {
+		8BA1F7E927E0BC28004720E7 /* ObjCNifly */ = {
 			isa = PBXGroup;
 			children = (
-				8BA1F88427E0C157004720E7 /* NifFileWrapper.h */,
-				8BA1F88827E0C274004720E7 /* NiflyBridge.cpp */,
-				8BA1F88B27E0C301004720E7 /* Nifly.swift */,
-				8BA1F88527E0C157004720E7 /* NifFile.mm */,
-				8BA1F88A27E0C300004720E7 /* BridgingHeader.h */,
+				8BA1F88427E0C157004720E7 /* ObjCNifFile.h */,
+				8BA1F88527E0C157004720E7 /* ObjCNifFile.mm */,
 			);
-			path = SwiftNifly;
-			sourceTree = "<group>";
-		};
-		8BA1F89227E0C38D004720E7 /* SwiftNiflyTests */ = {
-			isa = PBXGroup;
-			children = (
-				8BA1F89327E0C38D004720E7 /* NiflyTests.swift */,
-			);
-			path = SwiftNiflyTests;
+			path = ObjCNifly;
 			sourceTree = "<group>";
 		};
 		8BA1F89C27E0C99B004720E7 /* Frameworks */ = {
@@ -355,16 +281,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BA1F88627E0C157004720E7 /* NifFileWrapper.h in Headers */,
+				8BA1F88627E0C157004720E7 /* ObjCNifFile.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		8BA1F7E627E0BC28004720E7 /* SwiftNifly */ = {
+		8BA1F7E627E0BC28004720E7 /* ObjCNifly */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8BA1F7F027E0BC28004720E7 /* Build configuration list for PBXNativeTarget "SwiftNifly" */;
+			buildConfigurationList = 8BA1F7F027E0BC28004720E7 /* Build configuration list for PBXNativeTarget "ObjCNifly" */;
 			buildPhases = (
 				8BA1F7E327E0BC28004720E7 /* Headers */,
 				8BA1F7E427E0BC28004720E7 /* Sources */,
@@ -374,31 +300,10 @@
 			);
 			dependencies = (
 			);
-			name = SwiftNifly;
+			name = ObjCNifly;
 			productName = Nifly;
-			productReference = 8BA1F7E727E0BC28004720E7 /* libSwiftNifly.a */;
+			productReference = 8BA1F7E727E0BC28004720E7 /* libObjCNifly.a */;
 			productType = "com.apple.product-type.library.static";
-		};
-		8BA1F89027E0C38D004720E7 /* SwiftNiflyTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8BA1F89827E0C38D004720E7 /* Build configuration list for PBXNativeTarget "SwiftNiflyTests" */;
-			buildPhases = (
-				8BA1F88D27E0C38D004720E7 /* Sources */,
-				8BA1F88E27E0C38D004720E7 /* Frameworks */,
-				8BA1F88F27E0C38D004720E7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8BA1F89727E0C38D004720E7 /* PBXTargetDependency */,
-			);
-			name = SwiftNiflyTests;
-			packageProductDependencies = (
-				8BA1F95C27E0D508004720E7 /* XCTestExtensions */,
-			);
-			productName = NiflyTests;
-			productReference = 8BA1F89127E0C38D004720E7 /* SwiftNiflyTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -413,9 +318,6 @@
 					8BA1F7E627E0BC28004720E7 = {
 						CreatedOnToolsVersion = 13.3;
 						LastSwiftMigration = 1330;
-					};
-					8BA1F89027E0C38D004720E7 = {
-						CreatedOnToolsVersion = 13.3;
 					};
 				};
 			};
@@ -435,53 +337,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8BA1F7E627E0BC28004720E7 /* SwiftNifly */,
-				8BA1F89027E0C38D004720E7 /* SwiftNiflyTests */,
+				8BA1F7E627E0BC28004720E7 /* ObjCNifly */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		8BA1F88F27E0C38D004720E7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8BA1F95427E0D4B9004720E7 /* TestNifFile_LooseBlocks_SE.nif in Resources */,
-				8BA1F95227E0D4B9004720E7 /* TestNifFile_MultiBound_SE_expected.nif in Resources */,
-				8BA1F94A27E0D4B9004720E7 /* TestNifFile_Skinned_Dynamic_SE.nif in Resources */,
-				8BA1F94127E0D4B9004720E7 /* TestNifFile_Animated_LE_expected.nif in Resources */,
-				8BA1F94727E0D4B9004720E7 /* TestNifFile_Optimize_Dynamic_SE_to_LE.nif in Resources */,
-				8BA1F95127E0D4B9004720E7 /* TestNifFile_Optimize_Dynamic_LE_to_SE_expected.nif in Resources */,
-				8BA1F93D27E0D4B9004720E7 /* TestNifFile_Optimize_LE_to_SE_expected.nif in Resources */,
-				8BA1F94827E0D4B9004720E7 /* TestNifFile_Animated_LE.nif in Resources */,
-				8BA1F94D27E0D4B9004720E7 /* TestNifFile_Static_SE_expected.nif in Resources */,
-				8BA1F94427E0D4B9004720E7 /* TestNifFile_Skinned_FO4_expected.nif in Resources */,
-				8BA1F94C27E0D4B9004720E7 /* TestNifFile_Skinned_Dynamic_SE_expected.nif in Resources */,
-				8BA1F94027E0D4B9004720E7 /* TestNifFile_Static_SE.nif in Resources */,
-				8BA1F95827E0D4B9004720E7 /* TestNifFile_Optimize_LE_to_SE.nif in Resources */,
-				8BA1F94B27E0D4B9004720E7 /* TestNifFile_MultiBound_SE.nif in Resources */,
-				8BA1F95A27E0D4B9004720E7 /* TestNifFile_Skinned_SE_expected.nif in Resources */,
-				8BA1F94927E0D4B9004720E7 /* TestNifFile_Static_FO4_expected.nif in Resources */,
-				8BA1F93F27E0D4B9004720E7 /* TestNifFile_Optimize_SE_to_LE_expected.nif in Resources */,
-				8BA1F94527E0D4B9004720E7 /* TestNifFile_Skinned_OB.nif in Resources */,
-				8BA1F95727E0D4B9004720E7 /* TestNifFile_DeepGraph_SE_expected.nif in Resources */,
-				8BA1F94227E0D4B9004720E7 /* TestNifFile_Skinned_SE.nif in Resources */,
-				8BA1F95927E0D4B9004720E7 /* TestNifFile_Skinned_OB_expected.nif in Resources */,
-				8BA1F94327E0D4B9004720E7 /* TestNifFile_Static_FO4.nif in Resources */,
-				8BA1F93E27E0D4B9004720E7 /* TestNifFile_Furniture_Col_SE_expected.nif in Resources */,
-				8BA1F95027E0D4B9004720E7 /* TestNifFile_Furniture_Col_SE.nif in Resources */,
-				8BA1F95627E0D4B9004720E7 /* TestNifFile_Optimize_Dynamic_SE_to_LE_expected.nif in Resources */,
-				8BA1F94F27E0D4B9004720E7 /* TestNifFile_DeepGraph_SE.nif in Resources */,
-				8BA1F94627E0D4B9004720E7 /* TestNifFile_OrderedNode_SE_expected.nif in Resources */,
-				8BA1F95327E0D4B9004720E7 /* TestNifFile_LooseBlocks_SE_expected.nif in Resources */,
-				8BA1F93C27E0D4B9004720E7 /* TestNifFile_Optimize_SE_to_LE.nif in Resources */,
-				8BA1F94E27E0D4B9004720E7 /* TestNifFile_Skinned_FO4.nif in Resources */,
-				8BA1F93B27E0D4B9004720E7 /* TestNifFile_Optimize_Dynamic_LE_to_SE.nif in Resources */,
-				8BA1F95527E0D4B9004720E7 /* TestNifFile_OrderedNode_SE.nif in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8BA1F7E427E0BC28004720E7 /* Sources */ = {
@@ -490,13 +349,11 @@
 			files = (
 				8BA1F93927E0CE4A004720E7 /* Particles.cpp in Sources */,
 				8BA1F93727E0CE4A004720E7 /* NifFile.cpp in Sources */,
-				8BA1F89B27E0C665004720E7 /* NifFile.mm in Sources */,
+				8BA1F89B27E0C665004720E7 /* ObjCNifFile.mm in Sources */,
 				8BA1F93327E0CE4A004720E7 /* Shaders.cpp in Sources */,
 				8BA1F93027E0CE4A004720E7 /* Objects.cpp in Sources */,
 				8BA1F92E27E0CE4A004720E7 /* Geometry.cpp in Sources */,
 				8BA1F92F27E0CE4A004720E7 /* Nodes.cpp in Sources */,
-				8BA1F88C27E0C301004720E7 /* Nifly.swift in Sources */,
-				8BA1F88927E0C274004720E7 /* NiflyBridge.cpp in Sources */,
 				8BA1F93527E0CE4A004720E7 /* BasicTypes.cpp in Sources */,
 				8BA1F93A27E0CE4A004720E7 /* Factory.cpp in Sources */,
 				8BA1F93127E0CE4A004720E7 /* Skin.cpp in Sources */,
@@ -507,23 +364,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8BA1F88D27E0C38D004720E7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8BA1F89427E0C38D004720E7 /* NiflyTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		8BA1F89727E0C38D004720E7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8BA1F7E627E0BC28004720E7 /* SwiftNifly */;
-			targetProxy = 8BA1F89627E0C38D004720E7 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		8BA1F7EE27E0BC28004720E7 /* Debug */ = {
@@ -638,9 +479,11 @@
 		8BA1F7F127E0BC28004720E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2H48644JM2;
 				EXECUTABLE_PREFIX = lib;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -650,8 +493,7 @@
 					"@loader_path/../Frameworks",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = SwiftNifly/BridgingHeader.h;
+				SKIP_INSTALL = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				SYSTEM_HEADER_SEARCH_PATHS = (
@@ -664,9 +506,11 @@
 		8BA1F7F227E0BC28004720E7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2H48644JM2;
 				EXECUTABLE_PREFIX = lib;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -676,47 +520,12 @@
 					"@loader_path/../Frameworks",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = SwiftNifly/BridgingHeader.h;
+				SKIP_INSTALL = NO;
 				SWIFT_VERSION = 5.0;
 				SYSTEM_HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					Dependencies/nifly/external,
 				);
-			};
-			name = Release;
-		};
-		8BA1F89927E0C38D004720E7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2H48644JM2;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.elegantchaos.NiflyTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		8BA1F89A27E0C38D004720E7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2H48644JM2;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.elegantchaos.NiflyTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -732,20 +541,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8BA1F7F027E0BC28004720E7 /* Build configuration list for PBXNativeTarget "SwiftNifly" */ = {
+		8BA1F7F027E0BC28004720E7 /* Build configuration list for PBXNativeTarget "ObjCNifly" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8BA1F7F127E0BC28004720E7 /* Debug */,
 				8BA1F7F227E0BC28004720E7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8BA1F89827E0C38D004720E7 /* Build configuration list for PBXNativeTarget "SwiftNiflyTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8BA1F89927E0C38D004720E7 /* Debug */,
-				8BA1F89A27E0C38D004720E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -762,14 +562,6 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		8BA1F95C27E0D508004720E7 /* XCTestExtensions */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 8BA1F95B27E0D508004720E7 /* XCRemoteSwiftPackageReference "XCTestExtensions" */;
-			productName = XCTestExtensions;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8BA1F7DF27E0BC27004720E7 /* Project object */;
 }

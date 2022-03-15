@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "nifly"
-               BuildableName = "nifly"
-               BlueprintName = "nifly"
-               ReferencedContainer = "container:Package">
+               BlueprintIdentifier = "8BA1F7E627E0BC28004720E7"
+               BuildableName = "libObjCNifly.a"
+               BlueprintName = "ObjCNifly"
+               ReferencedContainer = "container:SwiftNifly.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -54,6 +54,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "8BA1F7E627E0BC28004720E7"
+            BuildableName = "libObjCNifly.a"
+            BlueprintName = "ObjCNifly"
+            ReferencedContainer = "container:SwiftNifly.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
