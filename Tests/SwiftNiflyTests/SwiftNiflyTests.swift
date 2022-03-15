@@ -1,12 +1,9 @@
-//
-//  NiflyTests.swift
-//  NiflyTests
-//
-//  Created by Sam Deane on 15/03/2022.
-//
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+//  Created by Sam Deane on 15/03/22.
+//  All code (c) 2022 - present day, Elegant Chaos Limited.
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
 import SwiftNifly
-import ObjCNifly
 import XCTest
 import XCTestExtensions
 
@@ -16,17 +13,17 @@ class NiflyTests: XCTestCase {
         let url = URL(fileURLWithPath: "not_existing.nif")
         let file = NifFile()
 
-        XCTAssertThrowsError(try file.load(url))
+        XCTAssertThrowsError(try file.load(from: url))
     }
 
     func testLoadAndSaveStaticFile() {
-        let url = Bundle.module.url(forResource: "TestNifFile_Static_SE", withExtension: "nif")
+        let url = Bundle.module.url(forResource: "TestNifFile_Static_SE", withExtension: "nif")!
         let file = NifFile()
 
-        XCTAssertNoThrow(try file.load(url))
+        XCTAssertNoThrow(try file.load(from: url))
         
         let output = outputFile(named: "TestNifFile_Static_SE", extension: "nif")
-        XCTAssertNoThrow(try file.save(output))
+        XCTAssertNoThrow(try file.save(to: output))
     }
 
     /*

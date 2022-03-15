@@ -3,14 +3,9 @@
 //  All code (c) 2022 - present day, Elegant Chaos Limited.
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-#include "nifly_file.hpp"
+typedef void* nifly_file;
 
-//@import Foundation;
-//
-//@interface NifFile: NSObject {
-//}
-//
-//- (BOOL)load: (NSURL*) url error: (NSError**) error;
-//- (BOOL)save: (NSURL*) url error: (NSError**) error;
-//
-//@end
+nifly_file nifly_file_new();
+void nifly_file_dispose(nifly_file);
+int nifly_file_load(nifly_file file, const char* path);
+int nifly_file_save(nifly_file file, const char* path);
