@@ -3,11 +3,11 @@
 //  All code (c) 2022 - present day, Elegant Chaos Limited.
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-import SwiftNifly
+import SwiftNIF
 import XCTest
 import XCTestExtensions
 
-class NiflyTests: XCTestCase {
+class SwiftNIFTests: XCTestCase {
 
     func testMissingFile() {
         let url = URL(fileURLWithPath: "not_existing.nif")
@@ -37,6 +37,31 @@ class NiflyTests: XCTestCase {
             print(node.name)
         }
     }
+
+    func testTree() throws {
+        let url = Bundle.module.url(forResource: "TestNifFile_Static_SE", withExtension: "nif")!
+        let file = NifFile()
+        try file.load(from: url)
+        let root = file.root
+        XCTAssertNotNil(root)
+
+        file.iterateTree(root) { node in
+            print("\(node.kind): \(node.name)")
+        }
+    }
+
+    func testShapes() throws {
+        let url = Bundle.module.url(forResource: "TestNifFile_Static_SE", withExtension: "nif")!
+        let file = NifFile()
+        try file.load(from: url)
+        let root = file.root
+        XCTAssertNotNil(root)
+
+        file.iterateShapes { shape in
+            print(shape.name)
+        }
+    }
+
     /*
      
      

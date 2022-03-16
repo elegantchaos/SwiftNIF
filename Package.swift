@@ -1,5 +1,5 @@
 
-// swift-tools-version:5.5
+// swift-tools-version:5.6
 
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 //  Created by Sam Deane on 31/01/2022.
@@ -9,18 +9,25 @@
 import PackageDescription
 
 let package = Package(
-    name: "SwiftNifly",
+    name: "SwiftNIF",
+    
     platforms: [
         .macOS(.v12)
     ],
+    
+    products: [
+        .library(name: "SwiftNIF", targets: ["SwiftNIF"])
+    ],
+    
     dependencies: [
         .package(url: "https://github.com/elegantchaos/XCTestExtensions", from: "1.4.6")
     ],
+    
     targets: [
         .testTarget(
-            name: "SwiftNiflyTests",
+            name: "SwiftNIFTests",
             dependencies: [
-                "SwiftNifly",
+                "SwiftNIF",
                 "XCTestExtensions"
             ],
             resources: [
@@ -29,7 +36,7 @@ let package = Package(
         ),
         
         .target(
-            name: "SwiftNifly",
+            name: "SwiftNIF",
             dependencies: [
                 "cnifly"
             ],

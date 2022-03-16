@@ -5,3 +5,4 @@
 
 #include "ni_file.h"
 #include "ni_node.h"
+#include "ni_shape.h"

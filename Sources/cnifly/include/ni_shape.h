@@ -3,12 +3,10 @@
 //  All code (c) 2022 - present day, Elegant Chaos Limited.
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-#include "ni_node_private.hpp"
+#include "ni_node.h"
 
-#include "Nodes.hpp"
-#include "BasicTypes.hpp"
+typedef void* _Nonnull ni_shape;
+typedef const void *const _Nonnull ni_context;
+typedef void (* _Nonnull ni_shape_callback)(ni_shape shape, ni_context context);
 
-const char* _Nonnull  ni_node_get_name(ni_node node) {
-    return asNode(node)->GetBlockName();
-}
-
+const char* ni_shape_get_name(ni_shape shape);

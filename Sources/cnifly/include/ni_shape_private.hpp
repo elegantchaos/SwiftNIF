@@ -3,9 +3,12 @@
 //  All code (c) 2022 - present day, Elegant Chaos Limited.
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
+extern "C" {
+#include "ni_shape.h"
+}
 
-typedef void* _Nonnull ni_node;
-typedef void* _Nullable ni_node_or_null;
+#include "Nodes.hpp"
 
-const char* _Nonnull ni_node_get_name(ni_node _Nonnull node);
-const char* _Nonnull ni_node_get_kind(ni_node _Nonnull node);
+inline nifly::NiShape* asShape(ni_shape shape) {
+    return (nifly::NiShape*) shape;
+}

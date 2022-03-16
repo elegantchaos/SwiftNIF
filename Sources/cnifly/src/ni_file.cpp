@@ -30,7 +30,7 @@ ni_node ni_file_get_root_node(ni_file file) {
     return asFile(file)->GetRootNode();
 }
 
-void ni_file_iterate_children(ni_file file, ni_node node, const void *const _Nonnull context, ni_node_callback* callback) {
+void ni_file_iterate_children(ni_file file, ni_node node, const void *const _Nonnull context, ni_node_callback callback) {
     std::vector<uint32_t> indices;
     asNode(node)->GetChildIndices(indices);
 
@@ -43,12 +43,21 @@ void ni_file_iterate_children(ni_file file, ni_node node, const void *const _Non
     }
 }
 
-void ni_file_iterate_tree(ni_file file, ni_node parent, const void *const _Nonnull context, ni_node_callback* callback) {
+void ni_file_iterate_tree(ni_file file, ni_node parent, const void *const _Nonnull context, ni_node_callback callback) {
     std::vector<nifly::NiObject*> objects;
     asFile(file)->GetTree(objects, asNode(parent));
     
     for (auto& object : objects) {
         callback(object, context);
+    }
+}
+
+void ni_file_iterate_shapes(ni_file file, ni_context context, ni_shape_callback callback) {
+    std::vector<nifly::NiShape*> shapes;
+    asFile(file)->GetShapes();
+    
+    for (auto& shape : shapes) {
+        callback(shape, context);
     }
 }
 
