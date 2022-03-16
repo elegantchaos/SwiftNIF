@@ -6,7 +6,8 @@
 
 typedef void* ni_node;
 
-//nifly_file nifly_file_new();
-//void nifly_file_dispose(nifly_file);
-//int nifly_file_load(nifly_file file, const char* path);
-//int nifly_file_save(nifly_file file, const char* path);
+const char* _Nonnull ni_node_get_name(ni_node _Nonnull node);
+
+//void ni_file_dispose(nifly_file);
+//int ni_file_load(nifly_file file, const char* path);
+//int ni_file_save(nifly_file file, const char* path);

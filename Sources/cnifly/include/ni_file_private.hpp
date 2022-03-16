@@ -3,5 +3,12 @@
 //  All code (c) 2022 - present day, Elegant Chaos Limited.
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
+extern "C" {
 #include "ni_file.h"
-#include "ni_node.h"
+}
+
+#include "NifFile.hpp"
+
+inline nifly::NifFile* asFile(ni_file handle) {
+    return (nifly::NifFile*) handle;
+}

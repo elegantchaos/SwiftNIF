@@ -32,6 +32,10 @@ class NiflyTests: XCTestCase {
         try file.load(from: url)
         let root = file.root
         XCTAssertNotNil(root)
+
+        file.iterateChildren(root) { node in
+            print(node.name)
+        }
     }
     /*
      

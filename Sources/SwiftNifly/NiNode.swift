@@ -13,4 +13,9 @@ public class NiNode {
         guard let node = node else { return nil }
         self.node = node
     }
+    
+    public var name: String? {
+        let name = ni_node_get_name(node)
+        return String(cString: name)
+    }
 }

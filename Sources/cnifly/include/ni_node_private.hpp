@@ -3,5 +3,12 @@
 //  All code (c) 2022 - present day, Elegant Chaos Limited.
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-#include "ni_file.h"
+extern "C" {
 #include "ni_node.h"
+}
+
+#include "Nodes.hpp"
+
+inline nifly::NiNode* asNode(ni_node node) {
+    return (nifly::NiNode*) node;
+}
