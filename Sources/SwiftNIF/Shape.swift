@@ -6,7 +6,7 @@
 import Foundation
 import cnifly
 
-public class NiShape: NiWrapper {
+public class Shape: NiWrapper {
     typealias Wrapped = ni_shape
 
     let wrapped: ni_shape

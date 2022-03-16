@@ -5,6 +5,7 @@
 
 #include "ni_file_private.hpp"
 #include "ni_node_private.hpp"
+#include "ni_shape_private.hpp"
 
 extern "C" {
 
@@ -61,4 +62,44 @@ void ni_file_iterate_shapes(ni_file file, ni_context context, ni_shape_callback 
     }
 }
 
+void ni_file_iterate_partitions(ni_file file, ni_shape shape, ni_context context, ni_partition_callback callback) {
+    
+    nifly::NiVector<nifly::BSDismemberSkinInstance::PartitionInfo> infos;
+    std::vector<int> triParts;
+    
+    asFile(file)->GetShapePartitions(asShape(shape), infos, triParts);
+    for (auto& info : infos) {
+        int partition = ((info.flags) << 16) | info.partID;
+        callback(partition, context);
+    }
 }
+
+
+}
+
+//
+//// Gets the partition info and a list of the partitions each triangle is assigned to.
+//// A triangle can only be assigned to one partition at the same time.
+//// A partition index of -1 in the list means the triangle is currently not assigned to any partition.
+//bool GetShapePartitions(NiShape* shape,
+//                        NiVector<BSDismemberSkinInstance::PartitionInfo>& partitionInfo,
+//                        std::vector<int>& triParts) const;
+//
+//// Sets the partition info and a list of the partitions each triangle is assigned to.
+//// A triangle can only be assigned to one partition at the same time.
+//// "convertSkinInstance" will convert a NiSkinInstance to a BSDismemberSkinInstance block.
+//void SetShapePartitions(NiShape* shape,
+//                        const NiVector<BSDismemberSkinInstance::PartitionInfo>& partitionInfo,
+//                        const std::vector<int>& triParts,
+//                        const bool convertSkinInstance = true);
+//
+//// Clears all partitions and assigns all triangles to a default partition slot.
+//// Default slot 32 for Skyrim (body) and slot 0 for FO3/NV (torso).
+//void SetDefaultPartition(NiShape* shape);
+//
+//// Delete partitions with the specified indices. partInds must be in sorted ascending order before calling!
+//void DeletePartitions(NiShape* shape, std::vector<uint32_t>& partInds);
+////const char* _Nonnull  ni_node_get_name(ni_node node) {
+////    return asNode(node)->GetBlockName();
+////}
+////

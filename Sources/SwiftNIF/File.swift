@@ -6,7 +6,7 @@
 import Foundation
 import cnifly
 
-public class NifFile {
+public class File {
     enum Error: Swift.Error {
         case loadFailed(Int)
         case saveFailed(Int)
@@ -36,39 +36,64 @@ public class NifFile {
         }
     }
     
-    public var root: NiNode? {
+    public var root: Node? {
         let root = ni_file_get_root_node(file)
-        return NiNode(root)
+        return Node(root)
     }
     
 
-    public func iterateChildren(_ node: NiNode?, callback: @escaping (NiNode) -> Void) {
+    public func iterateChildren(_ node: Node?, callback: @escaping (Node) -> Void) {
         if let parent = node ?? root {
             let block = CallbackBlock(callback: callback)
             let context = Unmanaged.passUnretained(block).toOpaque()
             ni_file_iterate_children(file, parent.wrapped, context, { node, context in
-                CallbackBlock<NiNode>.static_callback(node, context: context)
+                CallbackBlock<Node>.static_callback(node, context: context)
             })
         }
     }
 
-    public func iterateTree(_ node: NiNode?, callback: @escaping (NiNode) -> Void) {
+    public func iterateTree(_ node: Node?, callback: @escaping (Node) -> Void) {
         if let parent = node ?? root {
             let block = CallbackBlock(callback: callback)
             let context = Unmanaged.passUnretained(block).toOpaque()
             ni_file_iterate_tree(file, parent.wrapped, context, { node, context in
-                CallbackBlock<NiNode>.static_callback(node, context: context)
+                CallbackBlock<Node>.static_callback(node, context: context)
             })
         }
     }
 
-    public func iterateShapes(callback: @escaping (NiShape) -> Void) {
+    public func iterateShapes(callback: @escaping (Shape) -> Void) {
         let block = CallbackBlock(callback: callback)
         let context = Unmanaged.passUnretained(block).toOpaque()
         ni_file_iterate_shapes(file, context, { shape, context in
-            CallbackBlock<NiShape>.static_callback(shape, context: context)
+            CallbackBlock<Shape>.static_callback(shape, context: context)
         })
     }
+
+    public func iteratePartitions(_ shape: Shape, callback: @escaping (Partition) -> Void) {
+        let block = CallbackBlock(callback: callback)
+        let context = Unmanaged.passUnretained(block).toOpaque()
+        ni_file_iterate_partitions(file, shape.wrapped, context, { partition, context in
+            CallbackBlock<Partition>.static_callback(partition, context: context)
+        })
+    }
+
+}
+
+public class Partition: NiWrapper {
+    public let flags: UInt16
+    public let partID: UInt16
+    
+    required init(_ raw: UInt32) {
+        self.flags = UInt16(raw >> 16);
+        self.partID = UInt16(raw & 0xFFFF);
+    }
+    
+    var wrapped: UInt32 {
+        return UInt32(flags << 16) | UInt32(partID)
+    }
+    
+    typealias Wrapped = UInt32
 }
 
 protocol NiWrapper {

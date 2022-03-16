@@ -6,7 +6,7 @@
 import Foundation
 import cnifly
 
-public class NiNode: NiWrapper {
+public class Node: NiWrapper {
     typealias Wrapped = ni_node
     
     let wrapped: ni_node
@@ -26,8 +26,14 @@ public class NiNode: NiWrapper {
     }
 
     public var name: String {
-        let name = ni_node_get_name(wrapped)
-        return String(cString: name)
+        let string = ni_node_get_name(wrapped)
+        let name = String(cString: ni_string_chars(string))
+        ni_string_free(string)
+        return name
+    }
+    
+    public var asShape: Shape? {
+        return Shape(wrapped)
     }
 }
 

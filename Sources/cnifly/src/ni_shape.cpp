@@ -13,7 +13,3 @@ const char* ni_shape_get_name(ni_shape shape) {
     return string.get().c_str();
 }
 
-//const char* _Nonnull  ni_node_get_name(ni_node node) {
-//    return asNode(node)->GetBlockName();
-//}
-//

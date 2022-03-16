@@ -12,8 +12,17 @@ const char* _Nonnull  ni_node_get_kind(ni_node node) {
     return asNode(node)->GetBlockName();
 }
 
-const char* _Nonnull  ni_node_get_name(ni_node node) {
-    auto string = asNode(node)->name;
-    return string.get().c_str();
+ni_string ni_node_get_name(ni_node node) {
+    auto string = asNode(node)->name.get();
+    char* buffer = (char*) malloc(string.length() + 1);
+    std::strncpy(buffer, string.c_str(), string.length() + 1);
+    return (char*) buffer;
 }
 
+const char* _Nonnull ni_string_chars(ni_string string) {
+    return (char*)string;
+}
+
+void ni_string_free(ni_string string) {
+    free(string);
+}
