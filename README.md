@@ -6,9 +6,9 @@ Swift support for reading/writing NIF files, as used by Skyrim, Fallout and othe
                     
 This is currently a very minimal implementation, focussed solely on the features I need first.
                     
-## Nifly
+## Nifly
                     
-Currently this implementation is based on Ousnius' nifly library, which is a clean C++ wrapper around NIF files.
+Currently this implementation is based on [Ousnius](https://github.com/ousnius)' [nifly](https://github.com/ousnius/nifly) library, which is a clean C++ wrapper around NIF files.
 
 Because Swift-C++ interoperability isn't really a thing right now, I have added a C interface layer to nifly, and then wrapped that with Swift.
 
