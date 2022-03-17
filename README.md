@@ -12,4 +12,4 @@ Currently this implementation is based on [Ousnius](https://github.com/ousnius)'
 
 Because Swift-C++ interoperability isn't really a thing right now, I have added a C interface layer to nifly, and then wrapped that with Swift.
 
-                    At some point I might switch to a native Swift implementation.
+At some point I might switch to a native Swift implementation.
