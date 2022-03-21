@@ -9,7 +9,6 @@
 
 extern "C" {
 
-
 ni_file ni_file_new() {
     ni_file file = new nifly::NifFile();
     return file;
@@ -74,6 +73,12 @@ void ni_file_iterate_partitions(ni_file file, ni_shape shape, ni_context context
     }
 }
 
+void ni_file_set_partitions(ni_file file, ni_shape shape, int* values, int count) {
+    nifly::NiVector<nifly::BSDismemberSkinInstance::PartitionInfo> infos;
+    std::vector<int> triParts;
+
+    asFile(file)->SetShapePartitions(asShape(shape), infos, triParts);
+}
 
 }
 

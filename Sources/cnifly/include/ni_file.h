@@ -20,3 +20,4 @@ void ni_file_iterate_children(ni_file file, ni_node node, ni_context context, ni
 void ni_file_iterate_tree(ni_file file, ni_node parent, ni_context context, ni_node_callback callback);
 void ni_file_iterate_shapes(ni_file file, ni_context context, ni_shape_callback callback);
 void ni_file_iterate_partitions(ni_file file, ni_shape shape, ni_context context, ni_partition_callback callback);
+void ni_file_set_partitions(ni_file file, ni_shape shape, int* values, int count);
