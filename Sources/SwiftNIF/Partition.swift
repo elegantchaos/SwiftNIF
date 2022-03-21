@@ -5,20 +5,16 @@
 
 import Foundation
 
-public class Partition: NiWrapper {
+public class Partition: RawRepresentable {
     public let flags: UInt16
     public let partID: UInt16
-    let file: File
     
-    required init(_ raw: UInt32, file: File) {
-        self.flags = UInt16(raw >> 16);
-        self.partID = UInt16(raw & 0xFFFF);
-        self.file = file
+    public required init(rawValue: UInt32) {
+        self.flags = UInt16(rawValue >> 16);
+        self.partID = UInt16(rawValue & 0xFFFF);
     }
     
-    var wrapped: UInt32 {
+    public var rawValue: UInt32 {
         return UInt32(flags << 16) | UInt32(partID)
     }
-    
-    typealias Wrapped = UInt32
 }

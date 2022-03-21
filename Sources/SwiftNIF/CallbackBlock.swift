@@ -20,3 +20,31 @@ class CallbackBlock<T: NiWrapper> {
     }
 }
 
+class AccumulatingCallbackBlock<T: RawRepresentable> {
+    internal init() {
+        self.items = []
+    }
+    
+    var items: [T]
+    
+    class func static_callback(_ raw: T.RawValue, context: UnsafeRawPointer) {
+        let block = Unmanaged<Self>.fromOpaque(context).takeUnretainedValue()
+        if let value = T(rawValue: raw) {
+            block.items.append(value)
+        }
+    }
+}
+
+class AccumulatingRawCallbackBlock<T> {
+    internal init() {
+        self.items = []
+    }
+    
+    var items: [T]
+    
+    class func static_callback(_ raw: T, context: UnsafeRawPointer) {
+        let block = Unmanaged<Self>.fromOpaque(context).takeUnretainedValue()
+        block.items.append(raw)
+    }
+}
+

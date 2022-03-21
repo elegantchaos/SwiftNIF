@@ -30,15 +30,19 @@ public class Shape: NiWrapper {
         return name
     }
     
-    public func iteratePartitions(callback: @escaping (Partition) -> Void) {
-        let block = CallbackBlock(file: file, callback: callback)
-        let context = Unmanaged.passUnretained(block).toOpaque()
-        ni_file_iterate_partitions(file.file, wrapped, context, { partition, context in
-            CallbackBlock<Partition>.static_callback(partition, context: context)
-        })
-    }
+    public var partitions: [Partition] {
+        get {
+            let block = AccumulatingCallbackBlock<Partition>()
+            let context = Unmanaged.passUnretained(block).toOpaque()
+            ni_file_iterate_partitions(file.file, wrapped, context, { partition, context in
+                AccumulatingCallbackBlock<Partition>.static_callback(partition, context: context)
+            })
 
-    public func setPartitions(_ partitions: [Partition]) {
+            return block.items
+        }
         
+        set {
+            
+        }
     }
 }
