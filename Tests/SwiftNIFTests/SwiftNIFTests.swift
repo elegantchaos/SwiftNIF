@@ -11,14 +11,14 @@ class SwiftNIFTests: XCTestCase {
 
     func testMissingFile() {
         let url = URL(fileURLWithPath: "not_existing.nif")
-        let file = NifFile()
+        let file = File()
 
         XCTAssertThrowsError(try file.load(from: url))
     }
 
     func testLoadAndSaveStaticFile() {
         let url = Bundle.module.url(forResource: "TestNifFile_Static_SE", withExtension: "nif")!
-        let file = NifFile()
+        let file = File()
 
         XCTAssertNoThrow(try file.load(from: url))
         
@@ -28,7 +28,7 @@ class SwiftNIFTests: XCTestCase {
 
     func testNodes() throws {
         let url = Bundle.module.url(forResource: "TestNifFile_Static_SE", withExtension: "nif")!
-        let file = NifFile()
+        let file = File()
         try file.load(from: url)
         let root = file.root
         XCTAssertNotNil(root)
@@ -40,7 +40,7 @@ class SwiftNIFTests: XCTestCase {
 
     func testTree() throws {
         let url = Bundle.module.url(forResource: "TestNifFile_Static_SE", withExtension: "nif")!
-        let file = NifFile()
+        let file = File()
         try file.load(from: url)
         let root = file.root
         XCTAssertNotNil(root)
@@ -52,7 +52,7 @@ class SwiftNIFTests: XCTestCase {
 
     func testShapes() throws {
         let url = Bundle.module.url(forResource: "TestNifFile_Static_SE", withExtension: "nif")!
-        let file = NifFile()
+        let file = File()
         try file.load(from: url)
         let root = file.root
         XCTAssertNotNil(root)

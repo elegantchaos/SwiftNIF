@@ -9,4 +9,4 @@ typedef void* _Nonnull ni_shape;
 typedef const void *const _Nonnull ni_context;
 typedef void (* _Nonnull ni_shape_callback)(ni_shape shape, ni_context context);
 
-const char* ni_shape_get_name(ni_shape shape);
+const char* _Nonnull ni_shape_get_name(ni_shape shape);

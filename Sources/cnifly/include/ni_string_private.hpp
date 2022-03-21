@@ -9,11 +9,11 @@ extern "C" {
 
 #include "BasicTypes.hpp"
 
-ni_string asString(nifly::NiStringRef string) {
+inline ni_string asString(nifly::NiStringRef string) {
     return asString(string.get());
 }
 
-ni_string asString(std::string string) {
+inline ni_string asString(std::string string) {
     char* buffer = (char*) malloc(string.length() + 1);
     std::strncpy(buffer, string.c_str(), string.length() + 1);
     return (ni_string) buffer;
