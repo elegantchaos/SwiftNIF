@@ -15,5 +15,5 @@ const char* _Nonnull  ni_node_get_kind(ni_node node) {
 
 ni_string ni_node_get_name(ni_node node) {
     auto string = asNode(node)->name;
-    return asString(string);
+    return string_ref_to_ni_string(string);
 }

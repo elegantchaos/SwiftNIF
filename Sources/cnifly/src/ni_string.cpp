@@ -7,6 +7,16 @@
 
 #include "ni_string_private.hpp"
 
+ni_string std_string_to_ni_string(std::string string) {
+    char* buffer = (char*) malloc(string.length() + 1);
+    std::strncpy(buffer, string.c_str(), string.length() + 1);
+    return (ni_string) buffer;
+}
+
+ni_string string_ref_to_ni_string(nifly::NiStringRef string) {
+    return std_string_to_ni_string(string.get());
+}
+
 const char* _Nonnull ni_string_chars(ni_string string) {
     return (char*)string;
 }
@@ -14,3 +24,4 @@ const char* _Nonnull ni_string_chars(ni_string string) {
 void ni_string_free(ni_string string) {
     free(string);
 }
+
