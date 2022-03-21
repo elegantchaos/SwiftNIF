@@ -4,12 +4,12 @@
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
 #include "ni_shape_private.hpp"
+#include "ni_string_private.hpp"
 
 #include "Nodes.hpp"
 #include "BasicTypes.hpp"
 
-const char* ni_shape_get_name(ni_shape shape) {
+ni_string ni_shape_get_name(ni_shape shape) {
     auto string = asShape(shape)->name;
-    return string.get().c_str();
+    return string_ref_to_ni_string(string);
 }
-

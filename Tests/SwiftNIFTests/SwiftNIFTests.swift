@@ -33,7 +33,7 @@ class SwiftNIFTests: XCTestCase {
         let root = file.root
         XCTAssertNotNil(root)
 
-        file.iterateChildren(root) { node in
+        root!.iterateChildren { node in
             print(node.name)
         }
     }
@@ -45,7 +45,7 @@ class SwiftNIFTests: XCTestCase {
         let root = file.root
         XCTAssertNotNil(root)
 
-        file.iterateTree(root) { node in
+        root!.iterateTree { node in
             print("\(node.kind): \(node.name)")
         }
     }
