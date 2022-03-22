@@ -66,10 +66,11 @@ void ni_file_iterate_partitions(ni_file file, ni_shape shape, ni_context context
     nifly::NiVector<nifly::BSDismemberSkinInstance::PartitionInfo> infos;
     std::vector<int> triParts;
     
-    asFile(file)->GetShapePartitions(asShape(shape), infos, triParts);
-    for (auto& info : infos) {
-        int partition = ((info.flags) << 16) | info.partID;
-        callback(partition, context);
+    if (asFile(file)->GetShapePartitions(asShape(shape), infos, triParts)) {
+        for (auto& info : infos) {
+            int partition = ((info.flags) << 16) | info.partID;
+            callback(partition, context);
+        }
     }
 }
 
