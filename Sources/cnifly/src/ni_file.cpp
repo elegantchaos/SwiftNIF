@@ -78,7 +78,24 @@ void ni_file_set_partitions(ni_file file, ni_shape shape, int* values, int count
     nifly::NiVector<nifly::BSDismemberSkinInstance::PartitionInfo> infos;
     std::vector<int> triParts;
 
-    asFile(file)->SetShapePartitions(asShape(shape), infos, triParts);
+    if (asFile(file)->GetShapePartitions(asShape(shape), infos, triParts)) {
+        int trimax = count - 1;
+        for (auto& tri : triParts) {
+            tri = std::min(tri, trimax);
+        }
+
+        infos.clear();
+        while (count--) {
+            nifly::BSDismemberSkinInstance::PartitionInfo info;
+            int value = *values++;
+            info.partID = value & 0xFFFF;
+            info.flags = nifly::PartitionFlags(value >> 16);
+            infos.push_back(info);
+        }
+
+        asFile(file)->SetShapePartitions(asShape(shape), infos, triParts);
+    }
+    
 }
 
 }

@@ -45,4 +45,8 @@ public class Shape: NiWrapper {
             
         }
     }
+    
+    public func setPartition(_ partition: Partition) {
+        
+    }
 }
